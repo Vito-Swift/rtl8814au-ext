@@ -4492,9 +4492,8 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	if (rtap_len + sizeof(struct ieee80211_radiotap_header) < sizeof(rtap_hdr_buf)) {
 		// read all radiotap payload
 		_rtw_pktfile_read(&pktfile, rtap_hdr_buf + sizeof(struct ieee80211_radiotap_header), rtap_len);
-		rtap_len = ieee80211_get_radiotap_len(rtap_hdr_buf);
 		len -= rtap_len;
-
+		rtap_len = ieee80211_get_radiotap_len(rtap_hdr_buf);
 	} else {
 
 		RTW_INFO("%s: radiotap header size %d (Bytes) > internal header buffer %d (Bytes) \n",
@@ -4516,16 +4515,16 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 
     // Example code of parsing radiotap header: https://www.kernel.org/doc/Documentation/networking/radiotap-headers.txt  
     struct ieee80211_radiotap_iterator iterator;
+	int pkt_rate_100kbps = 0;
     if (ieee80211_radiotap_iterator_init(&iterator, rtap_hdr, rtap_len, NULL) < 0)
         RTW_INFO("%s: failed to init radiotap iterator\n", __FUNCTION__);
     else {
         int ret;
-        int pkt_rate_100kHz = 0;
 
         while ((ret = ieee80211_radiotap_iterator_next(&iterator)) == 0) {
             switch (iterator.this_arg_index) {
                 case IEEE80211_RADIOTAP_RATE:
-                    pkt_rate_100kHz = (*iterator.this_arg) * 5;
+                    pkt_rate_100kbps = (*iterator.this_arg) * 5;
                     // RTW_INFO("%s: pkt_rate_100kHz = %d\n", __FUNCTION__, pkt_rate_100kHz);
                     break;
 
@@ -4539,6 +4538,23 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
         }
     }
 
+	// set tranmsit rate according to radiotap header
+    if (pkt_rate_100kbps > 0 && pkt_rate_100kbps <= 90) {
+		xmit_rate = MGN_6M;
+	} else if (pkt_rate_100kbps > 90 && pkt_rate_100kbps <= 120) {
+		xmit_rate = MGN_9M;
+	} else if (pkt_rate_100kbps > 120 && pkt_rate_100kbps <= 180) {
+		xmit_rate = MGN_12M;
+	} else if (pkt_rate_100kbps > 180 && pkt_rate_100kbps <= 240) {
+		xmit_rate = MGN_18M;
+	} else if (pkt_rate_100kbps > 240 && pkt_rate_100kbps <= 360) {
+		xmit_rate = MGN_24M;
+	} else if (pkt_rate_100kbps > 360 && pkt_rate_100kbps <= 480) {
+		xmit_rate = MGN_36M;
+	} else if (pkt_rate_100kbps > 480) {
+		xmit_rate = MGN_54M;
+	}
+
 #else /* CONFIG_MONITOR_MODE_XMIT */
 
 	if (rtap_len != 12) {
@@ -4549,6 +4565,7 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	len = len - rtap_len;
 #endif /* CONFIG_MONITOR_MODE_XMIT */
 #endif /* CONFIG_CUSTOMER_ALIBABA_GENERAL */
+
 	pmgntframe = alloc_mgtxmitframe(pxmitpriv);
 	if (pmgntframe == NULL) {
 		rtw_udelay_os(500);
@@ -4572,7 +4589,6 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 			// Vito-ext: default will override the broadcast frame sending rate to MGN_24M;
 			// pattrib->rate = MGN_24M;
 			pattrib->rate = xmit_rate;
-			
 		}
 
 	} else {
