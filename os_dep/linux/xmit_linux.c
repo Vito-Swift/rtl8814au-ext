@@ -25,12 +25,13 @@ uint rtw_remainder_len(struct pkt_file *pfile)
 
 void _rtw_open_pktfile(_pkt *pktptr, struct pkt_file *pfile)
 {
-
+    // pkt: pointer to the skb buffer
 	pfile->pkt = pktptr;
+    // cur_addr: current offset of the packet
+    // pkt_len: remainder length of the packet
 	pfile->cur_addr = pfile->buf_start = pktptr->data;
 	pfile->pkt_len = pfile->buf_len = pktptr->len;
-
-	pfile->cur_buffer = pfile->buf_start ;
+	pfile->cur_buffer = pfile->buf_start;
 
 }
 
@@ -628,6 +629,7 @@ int rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 #endif
 		if (check_fwstate(pmlmepriv, WIFI_MONITOR_STATE) == _TRUE) {
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 24))
+			// RTW_INFO("%s: rtw_monitor_xmit_entry\n", __FUNCTION__);
 			ret = rtw_monitor_xmit_entry((struct sk_buff *)pkt, pnetdev);
 #endif
 		} else {

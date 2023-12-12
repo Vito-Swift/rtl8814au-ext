@@ -4445,7 +4445,7 @@ static void do_queue_select(_adapter	*padapter, struct pkt_attrib *pattrib)
 s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 {
 	u16 frame_ctl;
-	struct ieee80211_radiotap_header rtap_hdr;
+
 	_adapter *padapter = (_adapter *)rtw_netdev_priv(ndev);
 	struct pkt_file pktfile;
 	struct rtw_ieee80211_hdr *pwlanhdr;
@@ -4454,11 +4454,15 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	struct mlme_ext_priv	*pmlmeext = &(padapter->mlmeextpriv);
 	struct xmit_priv	*pxmitpriv = &(padapter->xmitpriv);
 	unsigned char	*pframe;
-	u8 dummybuf[32];
 	int len = skb->len, rtap_len;
+	
+	// Vito-ext: alloc buffer to store radiotap header
+    u8 rtap_hdr_buf[32];
+	struct ieee80211_radiotap_header* rtap_hdr = (struct ieee80211_radiotap_header*) rtap_hdr_buf;
+	u8 dummybuf[32];
 
-
-//	rtw_mstat_update(MSTAT_TYPE_SKB, MSTAT_ALLOC_SUCCESS, skb->truesize);
+	// Vito-ext: add variable to store transmit rate
+	u8 xmit_rate = MGN_24M;  
 
 #ifdef CONFIG_MONITOR_MODE_XMIT
 	int consume;
@@ -4471,24 +4475,70 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 		goto fail;
 
 	_rtw_open_pktfile((_pkt *)skb, &pktfile);
-	_rtw_pktfile_read(&pktfile, (u8 *)(&rtap_hdr), sizeof(struct ieee80211_radiotap_header));
-	rtap_len = ieee80211_get_radiotap_len((u8 *)(&rtap_hdr));
-	if (unlikely(rtap_hdr.it_version))
+    _rtw_pktfile_read(&pktfile, rtap_hdr_buf, sizeof(struct ieee80211_radiotap_header));
+	rtap_len = ieee80211_get_radiotap_len(rtap_hdr_buf);
+
+	if (unlikely(rtap_hdr->it_version))
 		goto fail;
 
 	if (unlikely(skb->len < rtap_len))
 		goto fail;
-
 #ifdef CONFIG_MONITOR_MODE_XMIT
-	len -= sizeof(struct ieee80211_radiotap_header);
-	rtap_len -= sizeof(struct ieee80211_radiotap_header);
 
-	while(rtap_len) {
-		consume = rtap_len > sizeof(dummybuf) ? sizeof(dummybuf) : rtap_len;
-		_rtw_pktfile_read(&pktfile, dummybuf, consume);
-		rtap_len -= consume;
-		len -= consume;
+    // Vito-ext: read radiotap header and extract rate field
+    len -= sizeof(struct ieee80211_radiotap_header);
+    rtap_len -= sizeof(struct ieee80211_radiotap_header);
+
+	if (rtap_len + sizeof(struct ieee80211_radiotap_header) < sizeof(rtap_hdr_buf)) {
+		// read all radiotap payload
+		_rtw_pktfile_read(&pktfile, rtap_hdr_buf + sizeof(struct ieee80211_radiotap_header), rtap_len);
+		rtap_len = ieee80211_get_radiotap_len(rtap_hdr_buf);
+		len -= rtap_len;
+
+	} else {
+
+		RTW_INFO("%s: radiotap header size %d (Bytes) > internal header buffer %d (Bytes) \n",
+				 __FUNCTION__, rtap_len + sizeof(struct ieee80211_radiotap_header), sizeof(rtap_hdr_buf));
+
+		while(rtap_len) {
+			consume = rtap_len > sizeof(dummybuf) ? sizeof(dummybuf) : rtap_len;
+			_rtw_pktfile_read(&pktfile, dummybuf, consume);
+			rtap_len -= consume;
+			len -= consume;
+		}
+
+		rtap_len = sizeof(struct ieee80211_radiotap_header);
 	}
+
+	// Compare radiotap header with skb->data
+	// RTW_MAP_DUMP_SEL(RTW_DBGDUMP, "dumped packet", (u8*)pktfile.buf_start, rtap_len);
+ 	// RTW_MAP_DUMP_SEL(RTW_DBGDUMP, "rtap_hdr", rtap_hdr_buf, rtap_len);
+
+    // Example code of parsing radiotap header: https://www.kernel.org/doc/Documentation/networking/radiotap-headers.txt  
+    struct ieee80211_radiotap_iterator iterator;
+    if (ieee80211_radiotap_iterator_init(&iterator, rtap_hdr, rtap_len, NULL) < 0)
+        RTW_INFO("%s: failed to init radiotap iterator\n", __FUNCTION__);
+    else {
+        int ret;
+        int pkt_rate_100kHz = 0;
+
+        while ((ret = ieee80211_radiotap_iterator_next(&iterator)) == 0) {
+            switch (iterator.this_arg_index) {
+                case IEEE80211_RADIOTAP_RATE:
+                    pkt_rate_100kHz = (*iterator.this_arg) * 5;
+                    // RTW_INFO("%s: pkt_rate_100kHz = %d\n", __FUNCTION__, pkt_rate_100kHz);
+                    break;
+
+                case IEEE80211_RADIOTAP_DBM_TX_POWER:
+                    // RTW_INFO("%s: tx_power_dbm = %d\n", __FUNCTION__, (*iterator.this_arg));
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+
 #else /* CONFIG_MONITOR_MODE_XMIT */
 
 	if (rtap_len != 12) {
@@ -4515,12 +4565,15 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	pwlanhdr = (struct rtw_ieee80211_hdr *)pframe;
 	frame_ctl = le16_to_cpu(pwlanhdr->frame_ctl);
 	if ((frame_ctl & RTW_IEEE80211_FCTL_FTYPE) == RTW_IEEE80211_FTYPE_DATA) {
-
 		pattrib = &pmgntframe->attrib;
 		update_monitor_frame_attrib(padapter, pattrib);
 
-		if (is_broadcast_mac_addr(pwlanhdr->addr3) || is_broadcast_mac_addr(pwlanhdr->addr1))
-			pattrib->rate = MGN_24M;
+		if (is_broadcast_mac_addr(pwlanhdr->addr3) || is_broadcast_mac_addr(pwlanhdr->addr1)) {
+			// Vito-ext: default will override the broadcast frame sending rate to MGN_24M;
+			// pattrib->rate = MGN_24M;
+			pattrib->rate = xmit_rate;
+			
+		}
 
 	} else {
 
