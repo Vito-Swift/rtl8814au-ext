@@ -3331,8 +3331,10 @@ struct xmit_buf *rtw_alloc_xmitbuf_ext(struct xmit_priv *pxmitpriv)
 
 	_enter_critical(&pfree_queue->lock, &irqL);
 
-	if (_rtw_queue_empty(pfree_queue) == _TRUE)
+	if (_rtw_queue_empty(pfree_queue) == _TRUE) {
+		// RTW_INFO("%s: pfree queue is emtpy!\n", __FUNCTION__);
 		pxmitbuf = NULL;
+	}
 	else {
 
 		phead = get_list_head(pfree_queue);
@@ -4551,8 +4553,10 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 		xmit_rate = MGN_24M;
 	} else if (pkt_rate_100kbps > 360 && pkt_rate_100kbps <= 480) {
 		xmit_rate = MGN_36M;
-	} else if (pkt_rate_100kbps > 480) {
+	} else if (pkt_rate_100kbps > 480 && pkt_rate_100kbps <= 650) {
 		xmit_rate = MGN_54M;
+	} else if (pkt_rate_100kbps > 650) {
+		xmit_rate = MGN_VHT1SS_MCS9;
 	}
 
 #else /* CONFIG_MONITOR_MODE_XMIT */
@@ -4568,7 +4572,7 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 
 	pmgntframe = alloc_mgtxmitframe(pxmitpriv);
 	if (pmgntframe == NULL) {
-		rtw_udelay_os(500);
+		rtw_udelay_os(50);
 		goto fail;
 	}
 
