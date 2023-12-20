@@ -1,8 +1,15 @@
 # RTL8814AU Driver
 
-original repository: [morrownr/88814au](https://github.com/morrownr/8814au)
+original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
 
 ---
+
+##
+
+Enable vht when launch kernel module (very important for use in AP mode!!!)
+```
+$ sudo modprobe -r 8814au && sudo modprobe 8814au rtw_vht_enable=2
+```
 
 ## Reference points:
 
