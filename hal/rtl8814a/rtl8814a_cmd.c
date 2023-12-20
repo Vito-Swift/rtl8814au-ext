@@ -728,7 +728,7 @@ s32 c2h_handler_8814a(_adapter *adapter, u8 id, u8 seq, u8 plen, u8 *payload)
 
 	switch (id) {
 	case C2H_TXBF:
-		RTW_INFO("[C2H], C2H_TXBF!!\n");
+		// RTW_INFO("[C2H], C2H_TXBF!!\n");
 		C2HTxBeamformingHandler_8814(adapter, payload, plen);
 		break;
 	case C2H_CCX_TX_RPT:
