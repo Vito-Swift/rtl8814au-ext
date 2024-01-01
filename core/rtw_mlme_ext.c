@@ -7446,6 +7446,7 @@ void update_mgnt_tx_rate(_adapter *padapter, u8 rate)
 
 void update_monitor_frame_attrib(_adapter *padapter, struct pkt_attrib *pattrib)
 {
+	// Vito-ext: 23/12/12 this function will be called when a monitor frame is about to send
 	HAL_DATA_TYPE	*pHalData = GET_HAL_DATA(padapter);
 	u8	wireless_mode;
 	struct mlme_ext_priv	*pmlmeext = &(padapter->mlmeextpriv);
@@ -7501,7 +7502,7 @@ void update_monitor_frame_attrib(_adapter *padapter, struct pkt_attrib *pattrib)
 
 	pattrib->mbssid = 0;
 	pattrib->hw_ssn_sel = pxmitpriv->hw_ssn_seq_no;
-
+	//RTW_INFO("%s(): called\n", __FUNCTION__);
 }
 
 
