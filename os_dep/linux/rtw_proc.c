@@ -275,7 +275,7 @@ static const struct proc_ops rtw_drv_proc_seq_fops = {
 	.proc_write = rtw_drv_proc_write,
 # else
 static const struct rtw_proc_ops rtw_drv_proc_seq_fops = {
-	.owner = THIS_MODULE,
+	//.owner = THIS_MODULE,
 	.open = rtw_drv_proc_open,
 	.read = seq_read,
 	.llseek = seq_lseek,
@@ -294,7 +294,7 @@ static const struct proc_ops rtw_drv_proc_sseq_fops = {
 	.proc_write = rtw_drv_proc_write,
 #else
 static const struct rtw_proc_ops rtw_drv_proc_sseq_fops = {
-	.owner = THIS_MODULE,
+	//.owner = THIS_MODULE,
 	.open = rtw_drv_proc_open,
 	.read = seq_read,
 	.llseek = seq_lseek,
