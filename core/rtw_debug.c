@@ -17,6 +17,9 @@
 #include <drv_types.h>
 #include <hal_data.h>
 
+// fixme: why EFUSE_MAP_PATH in Makefile has no effect?
+#define EFUSE_MAP_PATH "/sys/etc/wifi/wifi_efuse_8814au.map"
+
 #ifdef CONFIG_RTW_DEBUG
 const char *rtw_log_level_str[] = {
 	"_DRV_NONE_ = 0",
