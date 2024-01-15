@@ -24,6 +24,22 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
     RTW: [TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
     RTW: [Smooth TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
     ```
+
+4. Initfs TXBF parameters (os_dep/linux/os_initfs.c):
+    ```c
+    /*
+     * BIT0: Enable VHT SU Beamformer
+     * BIT1: Enable VHT SU Beamformee
+     * BIT2: Enable VHT MU Beamformer, depend on VHT SU Beamformer
+     * BIT3: Enable VHT MU Beamformee, depend on VHT SU Beamformee
+     * BIT4: Enable HT Beamformer
+     * BIT5: Enable HT Beamformee
+    */
+    int rtw_beamform_cap = BIT(1) | BIT(3);
+    int rtw_bfer_rf_number = 0; /*BeamformerCapRfNum Rf path number, 0 for auto, others for manual*/
+    int rtw_bfee_rf_number = 0; /*BeamformeeCapRfNum  Rf path number, 0 for auto, others for manual*/
+    ```
+
 ## Reference points:
 
 - Linux frame transmit entry point: [os_dep/linux/xmit_linux.c](https://github.com/Vito-Swift/rtl8814au-ext/blob/main/os_dep/linux/xmit_linux.c)
