@@ -4,6 +4,12 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
 
 ---
 
+## Features
+
+1. Assign and control Layer-II broadcast MCS rate in driver initfs 
+2. Assign and control Layer-I injection MCS rate in Radiotap header field
+3. Read raw compressed beamforming reports (NDPA response)
+
 ## Useful commands
 
 1. Rebuild this driver
