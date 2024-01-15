@@ -499,6 +499,9 @@ struct registry_priv {
 #ifdef CONFIG_RTW_MESH
 	u8 peer_alive_based_preq;
 #endif
+#ifdef CONFIG_BCAST_RATE_EXT
+	u8 bcast_rate;
+#endif
 };
 
 /* For registry parameters */

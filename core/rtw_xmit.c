@@ -1602,7 +1602,11 @@ get_sta_info:
 	pattrib->ack_policy = 0;
 
 	if (bmcast)
+#ifdef CONFIG_BCAST_RATE_EXT
+		pattrib->rate = padapter->registrypriv.bcast_rate;
+#else
 		pattrib->rate = psta->init_rate;
+#endif
 
 
 #ifdef CONFIG_WMMPS_STA

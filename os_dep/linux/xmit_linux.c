@@ -495,6 +495,7 @@ int _rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 		&& (padapter->registrypriv.wifi_spec == 0)
 	) {
 		if (pxmitpriv->free_xmitframe_cnt > (NR_XMITFRAME / 4)) {
+            // RTW_INFO("switch from multicast to unicast!\n");
 			res = rtw_mlcst2unicst(padapter, pkt);
 			if (res == _TRUE)
 				goto exit;
@@ -620,6 +621,7 @@ int rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 	_adapter *padapter = (_adapter *)rtw_netdev_priv(pnetdev);
 	struct	mlme_priv	*pmlmepriv = &(padapter->mlmepriv);
 	int ret = 0;
+    // RTW_INFO("%s: send entry\n", __FUNCTION__);
 
 	if (pkt) {
 #ifdef CONFIG_CUSTOMER_ALIBABA_GENERAL

@@ -622,6 +622,12 @@ int rtw_advnace_ota;
 module_param(rtw_advnace_ota, int, 0644);
 #endif
 
+#ifdef CONFIG_BCAST_RATE_EXT
+int rtw_bcast_rate = 1;
+module_param(rtw_bcast_rate, int, 0644);
+MODULE_PARM_DESC(rtw_bcast_rate, "Select MCS rate for broadcast packet");
+#endif
+
 uint rtw_notch_filter = RTW_NOTCH_FILTER;
 module_param(rtw_notch_filter, uint, 0644);
 MODULE_PARM_DESC(rtw_notch_filter, "0:Disable, 1:Enable, 2:Enable only for P2P");
@@ -1417,6 +1423,10 @@ uint loadparam(_adapter *padapter)
 	registry_par->halrf_ability = rtw_halrf_ability;
 #ifdef CONFIG_RTW_MESH
 	registry_par->peer_alive_based_preq = rtw_peer_alive_based_preq;
+#endif
+
+#ifdef CONFIG_BCAST_RATE_EXT
+	registry_par->bcast_rate = rtw_bcast_rate;
 #endif
 	return status;
 }

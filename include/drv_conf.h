@@ -141,7 +141,7 @@
 #endif
 
 #ifdef CONFIG_AP_MODE
-	#define CONFIG_TX_MCAST2UNI /* AP mode support IP multicast->unicast */
+	// #define CONFIG_TX_MCAST2UNI /* AP mode support IP multicast->unicast */
 #endif
 
 #ifdef CONFIG_RTW_MESH
