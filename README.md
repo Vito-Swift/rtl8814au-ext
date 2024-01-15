@@ -8,7 +8,7 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
 
 1. Rebuild this driver
     ```shell
-    $ 
+    $ sudo ./remove-driver.sh && sudo ./install-driver.sh  
     ```
 
 2. Enable vht (80211ac) when launch kernel module (very important for use in AP mode!!!)
