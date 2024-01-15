@@ -9,6 +9,7 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
 1. Assign and control Layer-II broadcast MCS rate in driver initfs 
 2. Assign and control Layer-I injection MCS rate in Radiotap header field
 3. Read raw compressed beamforming reports (NDPA response)
+4. Proc Debug mode
 
 ## Useful commands
 
