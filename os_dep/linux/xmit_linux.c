@@ -15,6 +15,7 @@
 #define _XMIT_OSDEP_C_
 
 #include <drv_types.h>
+#include <linux/ktime.h>
 
 #define DBG_DUMP_OS_QUEUE_CTL 0
 
@@ -32,7 +33,6 @@ void _rtw_open_pktfile(_pkt *pktptr, struct pkt_file *pfile)
 	pfile->cur_addr = pfile->buf_start = pktptr->data;
 	pfile->pkt_len = pfile->buf_len = pktptr->len;
 	pfile->cur_buffer = pfile->buf_start;
-
 }
 
 uint _rtw_pktfile_read(struct pkt_file *pfile, u8 *rmem, uint rlen)
@@ -454,7 +454,7 @@ int rtw_mlcst2unicst(_adapter *padapter, struct sk_buff *skb)
 
 
 int _rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
-{
+{	
 	_adapter *padapter = (_adapter *)rtw_netdev_priv(pnetdev);
 	struct xmit_priv *pxmitpriv = &padapter->xmitpriv;
 #ifdef CONFIG_TX_MCAST2UNI
@@ -482,7 +482,11 @@ int _rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 	}
 
 	rtw_check_xmit_resource(padapter, pkt);
-
+	// if ((IP_MCAST_MAC(pkt->data) || ICMPV6_MCAST_MAC(pkt->data) || is_broadcast_mac_addr(pkt->data))
+	// ){
+	// 	RTW_INFO("DBG_TX_DROP_FRAME %s broadcast packet\n", __FUNCTION__);
+	// 	goto drop_packet;
+	// }
 #ifdef CONFIG_TX_MCAST2UNI
 	if (!rtw_mc2u_disable
 		&& MLME_IS_AP(padapter)
@@ -533,8 +537,18 @@ int _rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 		goto exit;
 	}
 #endif
-
+#ifndef DBG_TX_XMIT_TIME
+	// measure xmit execution time
+	ktime_t start_time, stop_time, elapsed_time;
+	start_time = ktime_get();
+#endif
 	res = rtw_xmit(padapter, &pkt);
+#ifndef DBG_TX_XMIT_TIME
+	stop_time = ktime_get();
+	elapsed_time = ktime_sub(stop_time, start_time);
+	RTW_INFO("Xmit elapsed time: %lld ns\n", ktime_to_ns(elapsed_time));
+#endif
+
 	if (res < 0) {
 		#ifdef DBG_TX_DROP_FRAME
 		RTW_INFO("DBG_TX_DROP_FRAME %s rtw_xmit fail\n", __FUNCTION__);

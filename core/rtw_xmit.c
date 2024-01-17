@@ -4800,6 +4800,7 @@ s32 rtw_xmit_posthandle(_adapter *padapter, struct xmit_frame *pxmitframe, _pkt 
 		return 1;
 
 	/* pre_xmitframe */
+	// this will take much longer time when using broadcast address, why?
 	if (rtw_hal_xmit(padapter, pxmitframe) == _FALSE)
 		return 1;
 
@@ -4821,7 +4822,6 @@ s32 rtw_xmit(_adapter *padapter, _pkt **ppkt)
 	struct xmit_priv *pxmitpriv = &padapter->xmitpriv;
 	struct xmit_frame *pxmitframe = NULL;
 	s32 res;
-
 	DBG_COUNTER(padapter->tx_logs.core_tx);
 
 	if (IS_CH_WAITING(adapter_to_rfctl(padapter)))
@@ -4911,10 +4911,18 @@ s32 rtw_xmit(_adapter *padapter, _pkt **ppkt)
 		}
 	}
 #endif /* CONFIG_RTW_MESH */
-
 	pxmitframe->pkt = NULL; /* let rtw_xmit_posthandle not to free pkt inside */
+#ifdef DBG_TX_XMIT_TIME
+	// measure xmit execution time
+	ktime_t start_time, stop_time, elapsed_time;
+	start_time = ktime_get();
+#endif
 	res = rtw_xmit_posthandle(padapter, pxmitframe, *ppkt);
-
+#ifdef DBG_TX_XMIT_TIME
+	stop_time = ktime_get();
+	elapsed_time = stop_time-start_time;
+	RTW_INFO("Xmit posthandle: %lld ns\n", ktime_to_ns(elapsed_time));
+#endif
 	return res;
 }
 

@@ -319,7 +319,8 @@
 /* #define DBG_TX */
 /* #define DBG_XMIT_BUF */
 /* #define DBG_XMIT_BUF_EXT */
-/* #define DBG_TX_DROP_FRAME */
+#define DBG_TX_DROP_FRAME
+// #define DBG_TX_XMIT_TIME
 
 /* #define DBG_RX_DROP_FRAME */
 /* #define DBG_RX_SEQ */
