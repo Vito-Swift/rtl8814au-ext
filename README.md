@@ -49,6 +49,8 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
 
 5. Fix unicast rate: [how_to_do_unicast_rc.md](https://github.com/Vito-Swift/rtl8814au-ext/blob/main/doc/how_to_do_unicast_rc.md)
 
+6. Control TX power: `iw dev $iface_name set txpower fixed $tx_power`, where `$tx_power` is mW/1000.
+
 ## Reference points:
 
 - Linux frame transmit entry point: [os_dep/linux/xmit_linux.c](https://github.com/Vito-Swift/rtl8814au-ext/blob/main/os_dep/linux/xmit_linux.c)
