@@ -11,11 +11,11 @@ Then, uncomment `CONFIG_PHYDM_FW_FIXRATE` in include/drv_conf.h
 #define CONFIG_PHYDM_FW_FIXRATE	
 ```
 
-Rebuild the driver and modprobe module. The driver will create a `/proc/net/rtl8814au/<wiface_name>/` directory for controlling firmware and reading debug information. 
+Rebuild the driver and bring up the module. The driver will create a `/proc/net/rtl8814au/<wiface_name>/` directory for controlling firmware and reading debug information. 
 
 FD `/proc/net/rtl8814au/<wiface_name>/rate_ctl` is used to interface with the `proc_set_rate_ctl(struct file *file, const char __user *buffer, size_t count, loff_t *pos, void *data)` function. Command format:
 ```shell
-$ echo echo \<rate idx\> \<bw idx\> \<macid\> \> /proc/.../rate_ctl
+$ echo echo <rate idx> <bw idx> <macid> > /proc/.../rate_ctl
 ```
 
 - rate idx: 
