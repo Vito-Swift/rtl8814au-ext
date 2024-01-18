@@ -15,7 +15,7 @@ Rebuild the driver and bring up the module. The driver will create a `/proc/net/
 
 FD `/proc/net/rtl8814au/<wiface_name>/rate_ctl` is used to interface with the `proc_set_rate_ctl(struct file *file, const char __user *buffer, size_t count, loff_t *pos, void *data)` function. Command format:
 ```shell
-$ echo echo <rate idx> <bw idx> <macid> > /proc/.../rate_ctl
+$ echo <rate_idx> <bw_idx> <macid> > /proc/.../rate_ctl
 ```
 
 - rate idx: 
@@ -48,8 +48,8 @@ $ echo echo <rate idx> <bw idx> <macid> > /proc/.../rate_ctl
   ```shell
   $ cat /proc/net/rtl8814au/wlxe84e068fdc33/sta_tp_info
 
-    ====== mac_id : 0 [e8:4e:06:9c:bd:94] ======
-    tx_rate : MCS12(L)  rx_rate : OFDM_6M, rx_rate_bmc : CCK_1M, rssi : 49 %
-    RTW: [TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
-    RTW: [Smooth TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
+  ====== mac_id : 0 [e8:4e:06:9c:bd:94] ======
+  tx_rate : MCS12(L)  rx_rate : OFDM_6M, rx_rate_bmc : CCK_1M, rssi : 49 %
+  RTW: [TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
+  RTW: [Smooth TP] Tx : 0(Kbps) Rx : 0(Kbps) Total : 0(Kbps)
   ```
