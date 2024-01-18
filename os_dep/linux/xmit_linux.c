@@ -537,13 +537,13 @@ int _rtw_xmit_entry(_pkt *pkt, _nic_hdl pnetdev)
 		goto exit;
 	}
 #endif
-#ifndef DBG_TX_XMIT_TIME
+#ifdef DBG_TX_XMIT_TIME
 	// measure xmit execution time
 	ktime_t start_time, stop_time, elapsed_time;
 	start_time = ktime_get();
 #endif
 	res = rtw_xmit(padapter, &pkt);
-#ifndef DBG_TX_XMIT_TIME
+#ifdef DBG_TX_XMIT_TIME
 	stop_time = ktime_get();
 	elapsed_time = ktime_sub(stop_time, start_time);
 	RTW_INFO("Xmit elapsed time: %lld ns\n", ktime_to_ns(elapsed_time));

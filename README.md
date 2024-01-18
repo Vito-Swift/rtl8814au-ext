@@ -47,6 +47,8 @@ original repository: [morrownr/8814au](https://github.com/morrownr/8814au)
     int rtw_bfee_rf_number = 0; /*BeamformeeCapRfNum  Rf path number, 0 for auto, others for manual*/
     ```
 
+5. Fix unicast rate: [how_to_do_unicast_rc.md](https://github.com/Vito-Swift/rtl8814au-ext/blob/main/doc/how_to_do_unicast_rc.md)
+
 ## Reference points:
 
 - Linux frame transmit entry point: [os_dep/linux/xmit_linux.c](https://github.com/Vito-Swift/rtl8814au-ext/blob/main/os_dep/linux/xmit_linux.c)

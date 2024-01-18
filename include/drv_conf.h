@@ -465,7 +465,7 @@ defined(CONFIG_RTL8723B) || defined(CONFIG_RTL8703B) || defined(CONFIG_RTL8723D)
 
 
 /*#define CONFIG_DOSCAN_IN_BUSYTRAFFIC	*/
-/*#define CONFIG_PHDYM_FW_FIXRATE		*/	/*	Another way to fix tx rate	*/
+#define CONFIG_PHYDM_FW_FIXRATE			/*	Another way to fix tx rate	*/
 
 /*Don't release SDIO irq in suspend/resume procedure*/
 #define CONFIG_RTW_SDIO_KEEP_IRQ	0

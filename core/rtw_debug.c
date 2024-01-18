@@ -1954,7 +1954,7 @@ int proc_get_rate_ctl(struct seq_file *m, void *v)
 	return 0;
 }
 
-#ifdef 	CONFIG_PHDYM_FW_FIXRATE
+#ifdef 	CONFIG_PHYDM_FW_FIXRATE
 void phydm_fw_fix_rate(void *dm_void, u8 en, u8	macid, u8 bw, u8 rate);
 #endif
 ssize_t proc_set_rate_ctl(struct file *file, const char __user *buffer, size_t count, loff_t *pos, void *data)
@@ -1964,7 +1964,7 @@ ssize_t proc_set_rate_ctl(struct file *file, const char __user *buffer, size_t c
 	HAL_DATA_TYPE *hal_data = GET_HAL_DATA(adapter);
 	char tmp[32];
 	u8 fix_rate = 0xFF;
-#ifdef 	CONFIG_PHDYM_FW_FIXRATE
+#ifdef 	CONFIG_PHYDM_FW_FIXRATE
 	u8 bw = 0;
 #else
 	u8 data_fb = 0;
@@ -1979,7 +1979,7 @@ ssize_t proc_set_rate_ctl(struct file *file, const char __user *buffer, size_t c
 	}
 
 	if (buffer && !copy_from_user(tmp, buffer, count)) {
-#ifdef 	CONFIG_PHDYM_FW_FIXRATE
+#ifdef 	CONFIG_PHYDM_FW_FIXRATE
 		struct dm_struct *dm = adapter_to_phydm(adapter);
 		u8 en = 1, macid = 255;
 		_irqL	irqL;
