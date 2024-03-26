@@ -904,6 +904,8 @@ static void update_attrib_phy_info(_adapter *padapter, struct pkt_attrib *pattri
 	/* ht_en, init rate, ,bw, ch_offset, sgi */
 
 	pattrib->raid = psta->cmn.ra_info.rate_id;
+	// pattrib->raid=1;
+	//RTW_INFO("Use rate: %d\n", pattrib->raid);
 
 	bw = rtw_get_tx_bw_mode(padapter, psta);
 	pattrib->bwmode = rtw_min(bw, mlmeext->cur_bwmode);
@@ -4560,7 +4562,7 @@ s32 rtw_monitor_xmit_entry(struct sk_buff *skb, struct net_device *ndev)
 	} else if (pkt_rate_100kbps > 480 && pkt_rate_100kbps <= 650) {
 		xmit_rate = MGN_54M;
 	} else if (pkt_rate_100kbps > 650) {
-		xmit_rate = MGN_VHT1SS_MCS9;
+		xmit_rate = MGN_VHT1SS_MCS8;
 	}
 
 #else /* CONFIG_MONITOR_MODE_XMIT */
