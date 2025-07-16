@@ -23,6 +23,9 @@ EXTRA_CFLAGS += -Wno-discarded-qualifiers
 # Activates Concurrent Mode if uncommented
 #EXTRA_CFLAGS += -DCONFIG_CONCURRENT_MODE
 
+# Monitor Beamforming
+EXTRA_CFLAGS += -DCONFIG_MONITOR_BEAMFORMING
+
 # LED Control
 EXTRA_CFLAGS += -DCONFIG_LED_CONTROL
 EXTRA_CFLAGS += -DCONFIG_SW_LED -DCONFIG_RTW_SW_LED
