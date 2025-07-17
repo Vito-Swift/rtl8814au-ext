@@ -2,18 +2,23 @@
  * @ Author: Vito Wu
  * @ Create Time: 2025-07-11 12:40:59
  * @ Modified by: Vito Wu
- * @ Modified time: 2025-07-11 16:36:57
+ * @ Modified time: 2025-07-18 00:33:49
  * @ Description:
  */
 
 #define _RTL8814A_BF_MONITOR_C_
 
 #include <hal_data.h>
-#include "../hal_halmac.h"
-#include "rtl8814a.h"
+#include <drv_types.h>
+#include <rtw_rf.h>
+#include <rtw_recv.h>
+#include <rtw_xmit.h>
+#include <hal_intf.h>
+#include "hal8814a_fw.h"
 
 #ifdef CONFIG_BEAMFORMING_MONITOR
 
+/* hal/phydm/txbf/haltxbfinterface.c: send_fw_ndpa_packet */
 u8 bf_monitor_send_vht_ndpa(PADAPTER adapter,
                             u8 *ra,
                             u8 *ta,
@@ -96,6 +101,7 @@ u8 bf_monitor_send_vht_ndpa(PADAPTER adapter,
     return _TRUE;
 }
 
+/* hal/phydm/txbf/haltxbf8814a.c */
 void bf_monitor_phydm_txbf_rfmode_8814a(PADAPTER adapter, u8 su_bfee_cnt)
 {
     struct dm_struct *dm = (struct dm_struct *)GET_PDM_ODM(adapter);
@@ -140,6 +146,36 @@ void bf_monitor_phydm_txbf_rfmode_8814a(PADAPTER adapter, u8 su_bfee_cnt)
     /*@for 8814 19ac(idx 1), 19b4(idx 0), different Tx ant setting*/
     odm_set_bb_reg(dm, REG_BB_TXBF_ANT_SET_BF1_8814A, BIT(28) | BIT29, 0x2); /*@enable BB TxBF ant mapping register*/
     odm_set_bb_reg(dm, REG_BB_TXBF_ANT_SET_BF1_8814A, BIT30, 0x1);           /*@if Nsts > Nc don't apply V matrix*/
+}
+
+void bf_monitor_sounding_config(PADAPTER adapter,
+                                u8 bf_en,
+                                enum channel_width bw)
+{
+}
+
+void bf_monitor_init(PADAPTER adapter, u8 *bfer_macaddr, u8 bfer_g_id, u16 bfee_p_aid)
+{
+}
+
+void bf_monitor_reset(PADAPTER adapter)
+{
+}
+
+void bf_monitor_send(PADAPTER adapter, u8 *bfer_macaddr, u8 *bfee_macaddr, u16 p_aid, u8 g_id, u8 seq, enum channel_width bw)
+{
+}
+
+void bf_monitor_print_cbr(PADAPTER adapter, struct seq_file *m)
+{
+}
+
+void bf_monitor_print_conf(PADAPTER adapter, struct seq_file *m)
+{
+}
+
+void bf_monitor_enable_txbf(PADAPTER adapter, bool en)
+{
 }
 
 #endif /* CONFIG_BEAMFORMING_MONITOR */

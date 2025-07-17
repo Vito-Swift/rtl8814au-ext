@@ -1,0 +1,3909 @@
+ RTW: 0x0F0: 63 20 4E 49  43 08 03 31  32 33 34 35  36 FF FF FF  
+ RTW: 0x100: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x110: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF 04 FF FF  
+ RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x150: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x160: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x170: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x190: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: VID = 0x0BDA, PID = 0x8813
+ RTW: Customer ID: 0x00, SubCustomer ID: 0xCD
+ RTW: EEPROMRegulatory = 0x1
+ RTW: EEPROMBluetoothCoexist = 0, EEPROMBluetoothAntNum = Ant_x2
+ RTW: hal_com_config_channel_plan chplan:0x7F
+ RTW: crystal_cap: 0x3f
+ RTW: ThermalMeter = 0x2b
+ RTW: hal_ReadRemoteWakeup_8814A...bSupportRemoteWakeup(0)
+ RTW: SWAS: bHwAntDiv = 0, TRxAntDivType = 0
+ RTW: pHalData->ExternalPA_2G = 0, pHalData->external_pa_5g = 1
+ RTW: pHalData->ExternalLNA_2G = 0, pHalData->external_lna_5g = 1
+ RTW: pHalData->TypeGPA = 0x0, pHalData->TypeAPA = 0x0
+ RTW: pHalData->TypeGLNA = 0x0, pHalData->TypeALNA = 0x0
+ RTW: RFE Type: 0x 1
+ RTW: PowerTracking Type: 0x 0
+ RTW: Usb Switch: 1
+ RTW: PID= 0x8813, VID=  bda
+ RTW: Customer ID: 0x 0
+ RTW: hal_GetRxGainOffset_8814A(): AutoloadFail = 0!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_2G = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GL = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GM = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GH = 0xffff!!
+ RTW: registrypriv.RegPwrTrimEnable = 2
+ RTW: kfree flag:0
+ RTW: rtw_hal_read_chip_info in 113 ms
+ RTW: init_channel_set((null)) ChannelPlan ID:0x7f, ch num:37
+ RTW: EEPROM RF set 4T4R
+ RTW: default rf type: 4
+ RTW: [8814A] Final rf_config: 4
+ RTW: rtw_hal_rfpath_init trx_path_bmp:0x3f(RF_2T4R), NumTotalRFPath:4, max_tx_cnt:2
+ RTW: [TRX_Nss] HALSPEC - tx_nss :3, rx_nss:3
+ RTW: [TRX_Nss] Registry - tx_nss :0, rx_nss:0
+ RTW: [TRX_Nss] HALDATA - tx_nss :2, rx_nss:3
+ RTW: rtw_hal_trxnss_init tx_nss:2, rx_nss:3
+ RTW: init_mlme_default_rate_set: support CCK
+ RTW: init_mlme_default_rate_set: support OFDM
+ RTW: NR_RECVBUFF: 8
+ RTW: MAX_RECVBUF_SZ: 32768
+ RTW: NR_PREALLOC_RECV_SKB: 8
+ RTW: rtw_alloc_macid((null)) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_init_pwrctrl_priv: IPS_mode=0, LPS_mode=1, LPS_level=0
+ RTW: IQK FW offload:disable
+ RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+ RTW: can't get autopm:
+ RTW: rtw_macaddr_cfg mac addr:1c:bf:ce:76:6d:0b
+ RTW: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+ RTW: rtw_wiphy_alloc(phy3)
+ RTW: rtw_wdev_alloc(padapter=000000001d36592b)
+ RTW: rtw_wiphy_register(phy3)
+ RTW: Register RTW cfg80211 vendor cmd(0x67) interface
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_init(wlan0) if1 mac_addr=1c:bf:ce:76:6d:0b
+ RTW: rtw_ndev_notifier_call(wlan0) state:17
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlan0) state:5
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:11
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=0
+ RTW:  power-on :REG_SYS_CLKR 0x09=0xfc. REG_CR 0x100=0xff.
+ RTW:  MAC has already power on.
+ RTW: ===>_InitQueueReservedPage_8814AUsb()
+ RTW: <===_InitQueueReservedPage_8814AUsb()
+ RTW: FirmwareDownload8814A fw source from Header
+ RTW: FirmwareDownload8814A fw:NIC, size: 68320
+ RTW: FirmwareDownload8814A: fw_ver=33 fw_subver=6 sig=0x8814
+ RTW: dmem_pkt_size = 5792, iram_pkt_size = 62464,FWHeaderSize = 64, Len = 68320!!
+ RTW: MaxRsvdPageBufSize 1488,  Total len 68320
+ RTW: Check sum OK
+ RTW: dmem check sum tmp 33
+ RTW: Check sum OK
+ RTW: imem check sum tmp 105
+ RTW: FWDL success. write_fw:0, 77ms
+ RTW: rtl8814au_hal_init: Download Firmware Success!!
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: txpath=0x3, rxpath=0xf
+ RTW: txpath_1ss:0x1, num:1
+ RTW: txpath_2ss:0x3, num:2
+ RTW: rtl8814au_hal_init in 397ms
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: rtw_hal_get_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: [HW_VAR_ENABLE_RX_BAR] 0x6A2=0x520
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: Registry kfree default force disable.
+ RTW: MAC Address = 1c:bf:ce:76:6d:0b
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) start RTW_CMD_THREAD
+ RTW: rtw_cfg80211_init_wiphy:rf_type=4
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [warning] rf_type 4 is not expected
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 3
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:10
+ RTW: netdev_close(wlx1cbfce766d0b) , bup=1
+ RTW: (2)871x_drv - drv_close, bup=1, hw_init_completed=_TRUE
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 00:00:00:00:00:00
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 0
+ RTW: rtw_reset_securitypriv(wlx1cbfce766d0b) - End to Disconnect
+ RTW: rtw_free_assoc_resources-wlx1cbfce766d0b tgt_network MacAddress=00:00:00:00:00:00 ssid=
+ RTW: ERROR Free disconnecting network of scanned_queue failed due to pwlan == NULL
+ RTW: -871x_drv - drv_close, bup=1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:2
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_set_power_mgmt(wlx1cbfce766d0b) enabled:1, timeout:-1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ps_deny_cancel(wlx1cbfce766d0b): [ERROR] Reason 7 had been canceled before!!
+ RTW: set_mode = IW_MODE_INFRA
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: set bssid:00:00:00:00:00:00
+ RTW: =>rtw_wx_set_essid
+ RTW: <=rtw_wx_set_essid, ret 0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(5d) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(54) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 3
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(18) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=(null)
+ RTW: flush all sta, and cam_entry
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_start_ap(wlx1cbfce766d0b) hidden_ssid:0, auth_type:8
+ RTW: rtw_cfg80211_set_auth_type, nl80211_auth_type=8
+ RTW: rtw_add_beacon beacon_head_len=66, beacon_tail_len=114
+ RTW: rtw_check_beacon_data, len=156
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: update_hw_ht_param
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 1c:bf:ce:76:6d:0b
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 excl_ifbmp:0x00 req:0,-1,-1
+ RTW: rtw_ap_chbw_decision others ld_sta_num:0, lg_sta_num:0, ap_num:0, mesh_num:0
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 tmp union:36,2,1
+ RTW: rtw_ap_chbw_decision(wlx1cbfce766d0b) 36,2,1 => 36,2,1
+ RTW: rtw_ap_chbw_decision union:36,2,1
+ RTW: HW_VAR_BASIC_RATE: 0x15f->0x15f->0x15f
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:1, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:1, SM_PS 3
+ RTW: wlx1cbfce766d0b BMC Init Tx rate - OFDM_24M
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: rtw_cfg80211_indicate_connect(wlx1cbfce766d0b)
+ RTW: assoc success
+ RTW: cfg80211_rtw_change_bss(wlx1cbfce766d0b)
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VO = 0x002f3219
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VI = 0x005e4319
+ RTW: cfg80211_rtw_set_mac_acl(wlx1cbfce766d0b) acl_policy:0, entry_num:0
+ RTW: rtw_set_macaddr_acl(wlx1cbfce766d0b) p=1, mode=1
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BE = 0x0000642b
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BK = 0x0000a44f
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(49) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: +OnAuth
+ RTW: auth alg=0, seq=1
+ RTW: going to alloc stainfo for sa=1c:bf:ce:db:f4:62
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: issue_auth
+ RTW: OnAssocReq
+ RTW: STA did not include WPA/RSN IE in (Re)Association Request - possible WPS use
+ RTW: OnAssocReq(wlx1cbfce766d0b) allocate new AID=1
+ RTW: HT: STA 1c:bf:ce:db:f4:62 HT Capabilities Info: 0x186f
+ RTW: bss_cap_update_on_sta_join STA 1c:bf:ce:db:f4:62 - no greenfield, num of non-gf stations 1
+ RTW: rtw_ht_operation_update current operation mode=0x0
+ RTW: rtw_ht_operation_update new operation mode=0x4 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x4
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: associated_stainfo_update: 1c:bf:ce:db:f4:62, updated_type=0x3f
+ RTW: bss_cap_update_on_sta_join, updated=1
+ RTW: update_sta_info_apmode
+ RTW: Enable HT Tx LDPC for STA(1)
+ RTW: Current STA(1) VHT LDPC = 0A
+ RTW: Current STA(1) VHT STBC = 0A
+ RTW: Current STA(1) VHT Beamforming Setting = 1203
+ RTW: ### Set STA_(0) info ###
+ RTW: issue_asocrsp
+ RTW: report_add_sta_event: add STA
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:0, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:0, SM_PS 3
+ RTW: vht_mcs_map=ea ff, nss=2 => bitmap=00000000000fffff
+ RTW: rtw_ap_update_sta_ra_info=> mac_id:0 , tx_ra_bitmap:0x00000000fffffff0, networkType:0x44
+ RTW: ============ STA [1c:bf:ce:db:f4:62]  ===================
+ RTW: mac_id : 0
+ RTW: wireless_mode : 0x44
+ RTW: mimo_type : 3
+ RTW: static smps : N
+ RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+ RTW: rate_id : 9
+ RTW: rssi : -1 (%), rssi_level : 0
+ RTW: is_support_sgi : Y, is_vht_enable : Y
+ RTW: disable_ra : N, disable_pt : N
+ RTW: is_noisy : N
+ RTW: txrx_state : 0
+ RTW: curr_tx_rate : CCK_1M (L)
+ RTW: curr_tx_bw : 20MHz
+ RTW: curr_retry_ratio : 0
+ RTW: ra_mask : 0x00000000fffffff0
+ RTW: indicate_sta_assoc_event to upper layer - hostapd
+ RTW: rtw_cfg80211_indicate_sta_assoc(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: [dvobj:00000000ba977046][ERROR] continual_io_error:5 > 4
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b) Exit
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_stop_ap(wlx1cbfce766d0b)
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to 1c:bf:ce:db:f4:62
+ RTW: rtw_cfg80211_indicate_sta_disassoc(wlx1cbfce766d0b)
+ RTW: rtw_ht_operation_update current operation mode=0x4
+ RTW: rtw_ht_operation_update new operation mode=0x0 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x0
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: bss_cap_update_on_sta_leave, updated=1
+ RTW: report_del_sta_event(wlx1cbfce766d0b) 1c:bf:ce:db:f4:62 mac_id=0, enqueue:1, res:0
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: ### Clean STA_(0) info ###
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: DBG_TX_DROP_FRAME _rtw_xmit_entry if_up fail
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: module exit start
+ RTW: +rtw_dev_remove
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:10
+ RTW: netdev_close(wlx1cbfce766d0b) , bup=1
+ RTW: (2)871x_drv - drv_close, bup=1, hw_init_completed=_TRUE
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 0
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) call cfg80211_disconnected, reason:0
+ RTW: -871x_drv - drv_close, bup=1
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=0, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=1, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=2, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=3, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=4, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=5, addr=(null)
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:6
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:18
+ RTW: rtw_ndev_uninit(wlx1cbfce766d0b) if1
+ RTW: rtw_wdev_unregister(wdev=00000000f2bc0783)
+ RTW: rtw_wiphy_unregister(phy3)
+ RTW: Vendor: Unregister RTW cfg80211 vendor interface
+ RTW: rtw_pm_set_ips IPS_NONE
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_usb_primary_adapter_deinit(wlx1cbfce766d0b)
+ RTW: ==> rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: usb_read_port_cancel
+ RTW: usb_write_port_cancel
+ RTW: rtw_stop_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_hal_check_ips_status: hal_func.check_ips_status is NULL!
+ RTW: rtw_dev_unload: driver not in IPS
+ RTW: <== rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: +r871xu_dev_remove, hw_init_completed=1
+ RTW: WARN free_recv_skb_queue not empty, 1
+ RTW: rtw_wdev_free(wdev=00000000f2bc0783)
+ RTW: rtw_wiphy_free(phy3)
+ RTW: rtw_inetaddr_notifier_unregister
+ RTW: module exit success
+ RTW: module init start
+ RTW: rtl8814au v5.8.5.1_35583.20191029
+ RTW: rtw_inetaddr_notifier_register
+ RTW: usb_endpoint_descriptor(0):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=81
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_in = 1
+ RTW: usb_endpoint_descriptor(1):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=2
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 2
+ RTW: usb_endpoint_descriptor(2):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=3
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 3
+ RTW: usb_endpoint_descriptor(3):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=4
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 4
+ RTW: usb_endpoint_descriptor(4):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=85
+ RTW: wMaxPacketSize=64
+ RTW: bInterval=1
+ RTW: RT_usb_endpoint_is_int_in = 5, Interval = 1
+ RTW: nr_endpoint=5, in_num=2, out_num=3
+ RTW: USB_SPEED_HIGH
+ RTW: CHIP TYPE: RTL8814
+ RTW: read_chip_version_8814a SYS_CFG(0xF0)=0x04441137
+ RTW: Chip Version Info: CHIP_8814A_S2_3T3R_RomVer(0)
+ RTW: _ConfigChipOutEP_8814 OutEpQueueSel(0x07), OutEpNumber(3)
+ RTW: ====> Hal_InitEfuseVars_8814A
+ RTW: ====>pEfuseHal->WordUnit 4
+ RTW: ====>pEfuseHal->OOBProtectBytes 15
+ RTW: ====>pEfuseHal->ProtectBytes 16
+ RTW: ====>pEfuseHal->MaxSecNum_WiFi 64
+ RTW: ====>pEfuseHal->PhysicalLen_WiFi 1024
+ RTW: ====>pEfuseHal->LogicalLen_WiFi 512
+ RTW: Hal_InitEfuseVars_8814A <====
+ RTW: Boot from EFUSE, Autoload OK !
+ RTW: reg 0x32, usb write 1 fail, status:-71 value=0x20, vendorreq_times:1
+ RTW: reg 0x32, usb write 1 fail, status:-71 value=0x20, vendorreq_times:2
+ RTW: reg 0x32, usb write 1 fail, status:-71 value=0x20, vendorreq_times:3
+ RTW: HW EFUSE
+ RTW: 0x000: 29 81 0D F4  0D 0C 18 00  80 00 00 08  08 19 12 10  
+ RTW: 0x010: 2E 2D 2D 2D  2D 2D 2D 2D  2C 2C 2C FE  EE EE EE EE  
+ RTW: 0x020: EE EE 26 26  26 26 2A 28  28 28 28 28  25 26 26 27  
+ RTW: 0x030: D0 EE EE EE  EE EE F0 EE  EE EE 2B 2B  2B 2B 2B 2B  
+ RTW: 0x040: 2C 2C 2B 2B  2B FF EE EE  EE EE EE EE  1E 1E 1E 1E  
+ RTW: 0x050: 1E 1E 1E 1E  1E 1E 1E 1E  1E 1E F0 EE  EE EE EE FF  
+ RTW: 0x060: F0 EE EE EE  31 30 30 31  31 31 30 30  30 2F 2F EE  
+ RTW: 0x070: EE EE EE EE  EE EE 23 22  23 24 19 18  18 16 15 15  
+ RTW: 0x080: 19 1A 1C 1E  F1 EE EE EE  EE EE F0 EE  EE EE 37 36  
+ RTW: 0x090: 35 36 36 36  34 34 34 32  32 DC EE EE  EE EE EE EE  
+ RTW: 0x0A0: 1D 1D 1D 1B  1D 1C 1A 1A  1C 1C 1E 1E  1F 20 F1 EE  
+ RTW: 0x0B0: EE EE EE EE  00 EE EE EE  7F 3F 2B 00  0F 00 00 88  
+ RTW: 0x0C0: 88 01 00 00  00 00 00 55  00 FF 01 FF  FF FF FF FF  
+ RTW: 0x0D0: DA 0B 13 88  E3 66 FF FF  1C BF CE 76  6D 0B 09 03  
+ RTW: 0x0E0: 52 65 61 6C  74 65 6B 0E  03 38 30 32  2E 31 31 61  
+ RTW: 0x0F0: 63 20 4E 49  43 08 03 31  32 33 34 35  36 FF FF FF  
+ RTW: 0x100: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x110: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF 04 FF FF  
+ RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x150: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x160: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x170: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x190: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: VID = 0x0BDA, PID = 0x8813
+ RTW: Customer ID: 0x00, SubCustomer ID: 0xCD
+ RTW: EEPROMRegulatory = 0x1
+ RTW: EEPROMBluetoothCoexist = 0, EEPROMBluetoothAntNum = Ant_x2
+ RTW: hal_com_config_channel_plan chplan:0x7F
+ RTW: crystal_cap: 0x3f
+ RTW: ThermalMeter = 0x2b
+ RTW: hal_ReadRemoteWakeup_8814A...bSupportRemoteWakeup(0)
+ RTW: SWAS: bHwAntDiv = 0, TRxAntDivType = 0
+ RTW: pHalData->ExternalPA_2G = 0, pHalData->external_pa_5g = 1
+ RTW: pHalData->ExternalLNA_2G = 0, pHalData->external_lna_5g = 1
+ RTW: pHalData->TypeGPA = 0x0, pHalData->TypeAPA = 0x0
+ RTW: pHalData->TypeGLNA = 0x0, pHalData->TypeALNA = 0x0
+ RTW: RFE Type: 0x 1
+ RTW: PowerTracking Type: 0x 0
+ RTW: Usb Switch: 1
+ RTW: PID= 0x8813, VID=  bda
+ RTW: Customer ID: 0x 0
+ RTW: hal_GetRxGainOffset_8814A(): AutoloadFail = 0!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_2G = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GL = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GM = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GH = 0xffff!!
+ RTW: registrypriv.RegPwrTrimEnable = 2
+ RTW: kfree flag:0
+ RTW: rtw_hal_read_chip_info in 113 ms
+ RTW: init_channel_set((null)) ChannelPlan ID:0x7f, ch num:37
+ RTW: EEPROM RF set 4T4R
+ RTW: default rf type: 4
+ RTW: [8814A] Final rf_config: 4
+ RTW: rtw_hal_rfpath_init trx_path_bmp:0x3f(RF_2T4R), NumTotalRFPath:4, max_tx_cnt:2
+ RTW: [TRX_Nss] HALSPEC - tx_nss :3, rx_nss:3
+ RTW: [TRX_Nss] Registry - tx_nss :0, rx_nss:0
+ RTW: [TRX_Nss] HALDATA - tx_nss :2, rx_nss:3
+ RTW: rtw_hal_trxnss_init tx_nss:2, rx_nss:3
+ RTW: init_mlme_default_rate_set: support CCK
+ RTW: init_mlme_default_rate_set: support OFDM
+ RTW: NR_RECVBUFF: 8
+ RTW: MAX_RECVBUF_SZ: 32768
+ RTW: NR_PREALLOC_RECV_SKB: 8
+ RTW: rtw_alloc_macid((null)) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_init_pwrctrl_priv: IPS_mode=0, LPS_mode=0, LPS_level=0
+ RTW: IQK FW offload:disable
+ RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+ RTW: can't get autopm:
+ RTW: rtw_macaddr_cfg mac addr:1c:bf:ce:76:6d:0b
+ RTW: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+ RTW: rtw_wiphy_alloc(phy0)
+ RTW: rtw_wdev_alloc(padapter=00000000de473feb)
+ RTW: rtw_wiphy_register(phy0)
+ RTW: Register RTW cfg80211 vendor cmd(0x67) interface
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_init(wlan0) if1 mac_addr=1c:bf:ce:76:6d:0b
+ RTW: rtw_ndev_notifier_call(wlan0) state:17
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlan0) state:5
+ RTW: module init ret=0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:11
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=0
+ RTW:  power-on :REG_SYS_CLKR 0x09=0xfc. REG_CR 0x100=0xff.
+ RTW:  MAC has already power on.
+ RTW: ===>_InitQueueReservedPage_8814AUsb()
+ RTW: <===_InitQueueReservedPage_8814AUsb()
+ RTW: FirmwareDownload8814A fw source from Header
+ RTW: FirmwareDownload8814A fw:NIC, size: 68320
+ RTW: FirmwareDownload8814A: fw_ver=33 fw_subver=6 sig=0x8814
+ RTW: HalROMDownloadFWRSVDPage8814A(): There is an Adapter is sending beacon.
+ RTW: dmem_pkt_size = 5792, iram_pkt_size = 62464,FWHeaderSize = 64, Len = 68320!!
+ RTW: MaxRsvdPageBufSize 1488,  Total len 68320
+ RTW: Check sum OK
+ RTW: dmem check sum tmp 33
+ RTW: Check sum OK
+ RTW: imem check sum tmp 105
+ RTW: FWDL success. write_fw:0, 74ms
+ RTW: rtl8814au_hal_init: Download Firmware Success!!
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: txpath=0x3, rxpath=0xf
+ RTW: txpath_1ss:0x1, num:1
+ RTW: txpath_2ss:0x3, num:2
+ RTW: rtl8814au_hal_init in 391ms
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: rtw_hal_get_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: [HW_VAR_ENABLE_RX_BAR] 0x6A2=0x520
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: Registry kfree default force disable.
+ RTW: MAC Address = 1c:bf:ce:76:6d:0b
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) start RTW_CMD_THREAD
+ RTW: rtw_cfg80211_init_wiphy:rf_type=4
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [warning] rf_type 4 is not expected
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_set_power_mgmt(wlx1cbfce766d0b) enabled:0, timeout:-1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ps_deny_cancel(wlx1cbfce766d0b): [ERROR] Reason 7 had been canceled before!!
+ RTW: set_mode = IW_MODE_INFRA
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: set bssid:00:00:00:00:00:00
+ RTW: =>rtw_wx_set_essid
+ RTW: <=rtw_wx_set_essid, ret 0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 3
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(42) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=(null)
+ RTW: flush all sta, and cam_entry
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_start_ap(wlx1cbfce766d0b) hidden_ssid:0, auth_type:8
+ RTW: rtw_cfg80211_set_auth_type, nl80211_auth_type=8
+ RTW: rtw_add_beacon beacon_head_len=66, beacon_tail_len=114
+ RTW: rtw_check_beacon_data, len=156
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: update_hw_ht_param
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 1c:bf:ce:76:6d:0b
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 excl_ifbmp:0x00 req:0,-1,-1
+ RTW: rtw_ap_chbw_decision others ld_sta_num:0, lg_sta_num:0, ap_num:0, mesh_num:0
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 tmp union:40,1,2
+ RTW: rtw_ap_chbw_decision(wlx1cbfce766d0b) 40,1,2 => 40,1,2
+ RTW: rtw_ap_chbw_decision union:40,1,2
+ RTW: HW_VAR_BASIC_RATE: 0x15f->0x15f->0x15f
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:1, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:1, SM_PS 3
+ RTW: wlx1cbfce766d0b BMC Init Tx rate - OFDM_24M
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: rtw_cfg80211_indicate_connect(wlx1cbfce766d0b)
+ RTW: assoc success
+ RTW: cfg80211_rtw_change_bss(wlx1cbfce766d0b)
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VO = 0x002f3219
+ RTW: cfg80211_rtw_set_mac_acl(wlx1cbfce766d0b) acl_policy:0, entry_num:0
+ RTW: rtw_set_macaddr_acl(wlx1cbfce766d0b) p=1, mode=1
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VI = 0x005e4319
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BE = 0x0000642b
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BK = 0x0000a44f
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(36) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: +OnAuth
+ RTW: auth alg=0, seq=1
+ RTW: going to alloc stainfo for sa=1c:bf:ce:db:f4:62
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: issue_auth
+ RTW: OnAssocReq
+ RTW: STA did not include WPA/RSN IE in (Re)Association Request - possible WPS use
+ RTW: OnAssocReq(wlx1cbfce766d0b) allocate new AID=1
+ RTW: HT: STA 1c:bf:ce:db:f4:62 HT Capabilities Info: 0x186f
+ RTW: bss_cap_update_on_sta_join STA 1c:bf:ce:db:f4:62 - no greenfield, num of non-gf stations 1
+ RTW: rtw_ht_operation_update current operation mode=0x0
+ RTW: rtw_ht_operation_update new operation mode=0x4 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x4
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: associated_stainfo_update: 1c:bf:ce:db:f4:62, updated_type=0x3f
+ RTW: bss_cap_update_on_sta_join, updated=1
+ RTW: update_sta_info_apmode
+ RTW: Enable HT Tx LDPC for STA(1)
+ RTW: ### Set STA_(0) info ###
+ RTW: issue_asocrsp
+ RTW: report_add_sta_event: add STA
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:0, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:0, SM_PS 3
+ RTW: ht_mcs_set=ff ff ff 00, nss=2, bitmap=0000ffff
+ RTW: rtw_ap_update_sta_ra_info=> mac_id:0 , tx_ra_bitmap:0x000000000ffffff0, networkType:0x14
+ RTW: ============ STA [1c:bf:ce:db:f4:62]  ===================
+ RTW: mac_id : 0
+ RTW: wireless_mode : 0x14
+ RTW: mimo_type : 3
+ RTW: static smps : N
+ RTW: bw_mode : 40MHz, ra_bw_mode : 40MHz
+ RTW: rate_id : 9
+ RTW: rssi : -1 (%), rssi_level : 0
+ RTW: is_support_sgi : Y, is_vht_enable : N
+ RTW: disable_ra : N, disable_pt : N
+ RTW: is_noisy : N
+ RTW: txrx_state : 0
+ RTW: curr_tx_rate : CCK_1M (L)
+ RTW: curr_tx_bw : 20MHz
+ RTW: curr_retry_ratio : 0
+ RTW: ra_mask : 0x000000000ffffff0
+ RTW: indicate_sta_assoc_event to upper layer - hostapd
+ RTW: rtw_cfg80211_indicate_sta_assoc(wlx1cbfce766d0b)
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(38) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(40) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(3e) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(3f) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(40) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(2e) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(56) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(3f) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: assign_scan_backop_flags:0x31
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000003, ori reg_0x4d4=0x00000000
+ RTW: SCMapping: pHalData->current_channel_bw 1, pHalData->nCur40MhzPrimeSC 2
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000003, ori reg_0x4d4=0x00000003
+ RTW: survey done event(4c) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_stop_ap(wlx1cbfce766d0b)
+ RTW: stop_ap_hdl(wlx1cbfce766d0b)
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to 1c:bf:ce:db:f4:62
+ RTW: rtw_cfg80211_indicate_sta_disassoc(wlx1cbfce766d0b)
+ RTW: rtw_ht_operation_update current operation mode=0x4
+ RTW: rtw_ht_operation_update new operation mode=0x0 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x0
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: bss_cap_update_on_sta_leave, updated=1
+ RTW: report_del_sta_event(wlx1cbfce766d0b) 1c:bf:ce:db:f4:62 mac_id=0, enqueue:1, res:1
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: ### Clean STA_(0) info ###
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 00:00:00:00:00:00
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: rtw_free_assoc_resources-wlx1cbfce766d0b tgt_network MacAddress=1c:bf:ce:76:6d:0b ssid=MIMO-Beamformer
+ RTW: ERROR Free disconnecting network of scanned_queue failed due to pwlan == NULL
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_stadel_event_callback(mac_id=0)=1c:bf:ce:db:f4:62
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=0
+ RTW: wlx1cbfce766d0b wakeup macid=0, ori reg_0x4d4=0x00000000
+ RTW: rtw_stadel_event_callback(mac_id=0)=1c:bf:ce:db:f4:62 psta == NULL
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 00:00:00:00:00:00
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: rtw_free_assoc_resources-wlx1cbfce766d0b tgt_network MacAddress=1c:bf:ce:76:6d:0b ssid=MIMO-Beamformer
+ RTW: ERROR Free disconnecting network of scanned_queue failed due to pwlan == NULL
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 3
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: rtw_reset_securitypriv(wlx1cbfce766d0b) - End to Disconnect
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(47) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: module exit start
+ RTW: ###=> usb_read_port_complete => urb.status(-108)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: +rtw_dev_remove
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:10
+ RTW: netdev_close(wlx1cbfce766d0b) , bup=1
+ RTW: (2)871x_drv - drv_close, bup=1, hw_init_completed=_TRUE
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b) Exit
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 0
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) call cfg80211_disconnected, reason:0
+ RTW: -871x_drv - drv_close, bup=1
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=0, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=1, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=2, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=3, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=4, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=5, addr=(null)
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:6
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:18
+ RTW: rtw_ndev_uninit(wlx1cbfce766d0b) if1
+ RTW: rtw_wdev_unregister(wdev=0000000028d6e6e0)
+ RTW: rtw_wiphy_unregister(phy0)
+ RTW: Vendor: Unregister RTW cfg80211 vendor interface
+ RTW: rtw_pm_set_ips IPS_NONE
+ RTW: rtw_pm_set_ips: bDriverStopped=True, bup=1, hw_init_completed=1
+ RTW: rtw_usb_primary_adapter_deinit(wlx1cbfce766d0b)
+ RTW: ==> rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: usb_read_port_cancel
+ RTW: usb_write_port_cancel
+ RTW: rtw_stop_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_hal_check_ips_status: hal_func.check_ips_status is NULL!
+ RTW: rtw_dev_unload: driver not in IPS
+ RTW: ==> rtl8814au_hal_deinit
+ RTW: CardDisableRTL8814AU
+ RTW: <== rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: +r871xu_dev_remove, hw_init_completed=0
+ RTW: WARN free_recv_skb_queue not empty, 1
+ RTW: rtw_wdev_free(wdev=0000000028d6e6e0)
+ RTW: rtw_wiphy_free(phy0)
+ RTW: rtw_inetaddr_notifier_unregister
+ RTW: module exit success
+ RTW: module init start
+ RTW: rtl8814au v5.8.5.1_35583.20191029
+ RTW: rtw_inetaddr_notifier_register
+ RTW: usb_endpoint_descriptor(0):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=81
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_in = 1
+ RTW: usb_endpoint_descriptor(1):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=2
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 2
+ RTW: usb_endpoint_descriptor(2):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=3
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 3
+ RTW: usb_endpoint_descriptor(3):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=4
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 4
+ RTW: usb_endpoint_descriptor(4):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=85
+ RTW: wMaxPacketSize=64
+ RTW: bInterval=1
+ RTW: RT_usb_endpoint_is_int_in = 5, Interval = 1
+ RTW: nr_endpoint=5, in_num=2, out_num=3
+ RTW: USB_SPEED_HIGH
+ RTW: CHIP TYPE: RTL8814
+ RTW: read_chip_version_8814a SYS_CFG(0xF0)=0x04441135
+ RTW: Chip Version Info: CHIP_8814A_S2_3T3R_RomVer(0)
+ RTW: _ConfigChipOutEP_8814 OutEpQueueSel(0x07), OutEpNumber(3)
+ RTW: ====> Hal_InitEfuseVars_8814A
+ RTW: ====>pEfuseHal->WordUnit 4
+ RTW: ====>pEfuseHal->OOBProtectBytes 15
+ RTW: ====>pEfuseHal->ProtectBytes 16
+ RTW: ====>pEfuseHal->MaxSecNum_WiFi 64
+ RTW: ====>pEfuseHal->PhysicalLen_WiFi 1024
+ RTW: ====>pEfuseHal->LogicalLen_WiFi 512
+ RTW: Hal_InitEfuseVars_8814A <====
+ RTW: Boot from EFUSE, Autoload OK !
+ RTW: data[0] = 29
+ RTW: data[1] = 81
+ RTW: data[2] = d
+ RTW: data[3] = f4
+ RTW: data[4] = d
+ RTW: data[5] = c
+ RTW: data[6] = 18
+ RTW: data[7] = 0
+ RTW: data[8] = 80
+ RTW: data[9] = 0
+ RTW: data[a] = 0
+ RTW: data[b] = 8
+ RTW: data[c] = 8
+ RTW: data[d] = 19
+ RTW: data[e] = 12
+ RTW: data[f] = 10
+ RTW: data[10] = 2e
+ RTW: data[11] = 2d
+ RTW: data[12] = 2d
+ RTW: data[13] = 2d
+ RTW: data[14] = 2d
+ RTW: data[15] = 2d
+ RTW: data[16] = 2d
+ RTW: data[17] = 2d
+ RTW: data[18] = 2c
+ RTW: data[19] = 2c
+ RTW: data[1a] = 2c
+ RTW: data[1b] = fe
+ RTW: data[1c] = ee
+ RTW: data[1d] = ee
+ RTW: data[1e] = ee
+ RTW: data[1f] = ee
+ RTW: data[20] = ee
+ RTW: data[21] = ee
+ RTW: data[22] = 26
+ RTW: data[23] = 26
+ RTW: data[24] = 26
+ RTW: data[25] = 26
+ RTW: data[26] = 2a
+ RTW: data[27] = 28
+ RTW: data[28] = 28
+ RTW: data[29] = 28
+ RTW: data[2a] = 28
+ RTW: data[2b] = 28
+ RTW: data[2c] = 25
+ RTW: data[2d] = 26
+ RTW: data[2e] = 26
+ RTW: data[2f] = 27
+ RTW: data[30] = d0
+ RTW: data[31] = ee
+ RTW: data[32] = ee
+ RTW: data[33] = ee
+ RTW: data[34] = ee
+ RTW: data[35] = ee
+ RTW: data[36] = f0
+ RTW: data[37] = ee
+ RTW: data[38] = ee
+ RTW: data[39] = ee
+ RTW: data[3a] = 2b
+ RTW: data[3b] = 2b
+ RTW: data[3c] = 2b
+ RTW: data[3d] = 2b
+ RTW: data[3e] = 2b
+ RTW: data[3f] = 2b
+ RTW: data[40] = 2c
+ RTW: data[41] = 2c
+ RTW: data[42] = 2b
+ RTW: data[43] = 2b
+ RTW: data[44] = 2b
+ RTW: data[45] = ff
+ RTW: data[46] = ee
+ RTW: data[47] = ee
+ RTW: data[48] = ee
+ RTW: data[49] = ee
+ RTW: data[4a] = ee
+ RTW: data[4b] = ee
+ RTW: data[4c] = 1e
+ RTW: data[4d] = 1e
+ RTW: data[4e] = 1e
+ RTW: data[4f] = 1e
+ RTW: data[50] = 1e
+ RTW: data[51] = 1e
+ RTW: data[52] = 1e
+ RTW: data[53] = 1e
+ RTW: data[54] = 1e
+ RTW: data[55] = 1e
+ RTW: data[56] = 1e
+ RTW: data[57] = 1e
+ RTW: data[58] = 1e
+ RTW: data[59] = 1e
+ RTW: data[5a] = f0
+ RTW: data[5b] = ee
+ RTW: data[5c] = ee
+ RTW: data[5d] = ee
+ RTW: data[5e] = ee
+ RTW: data[5f] = ff
+ RTW: data[60] = f0
+ RTW: data[61] = ee
+ RTW: data[62] = ee
+ RTW: data[63] = ee
+ RTW: data[64] = 31
+ RTW: data[65] = 30
+ RTW: data[66] = 30
+ RTW: data[67] = 31
+ RTW: data[68] = 31
+ RTW: data[69] = 31
+ RTW: data[6a] = 30
+ RTW: data[6b] = 30
+ RTW: data[6c] = 30
+ RTW: data[6d] = 2f
+ RTW: data[6e] = 2f
+ RTW: data[6f] = ee
+ RTW: data[70] = ee
+ RTW: data[71] = ee
+ RTW: data[72] = ee
+ RTW: data[73] = ee
+ RTW: data[74] = ee
+ RTW: data[75] = ee
+ RTW: data[76] = 23
+ RTW: data[77] = 22
+ RTW: data[78] = 23
+ RTW: data[79] = 24
+ RTW: data[7a] = 19
+ RTW: data[7b] = 18
+ RTW: data[7c] = 18
+ RTW: data[7d] = 16
+ RTW: data[7e] = 15
+ RTW: data[7f] = 15
+ RTW: data[80] = 19
+ RTW: data[81] = 1a
+ RTW: data[82] = 1c
+ RTW: data[83] = 1e
+ RTW: data[84] = f1
+ RTW: data[85] = ee
+ RTW: data[86] = ee
+ RTW: data[87] = ee
+ RTW: data[88] = ee
+ RTW: data[89] = ee
+ RTW: data[8a] = f0
+ RTW: data[8b] = ee
+ RTW: data[8c] = ee
+ RTW: data[8d] = ee
+ RTW: data[8e] = 37
+ RTW: data[8f] = 36
+ RTW: data[90] = 35
+ RTW: data[91] = 36
+ RTW: data[92] = 36
+ RTW: data[93] = 36
+ RTW: data[94] = 34
+ RTW: data[95] = 34
+ RTW: data[96] = 34
+ RTW: data[97] = 32
+ RTW: data[98] = 32
+ RTW: data[99] = dc
+ RTW: data[9a] = ee
+ RTW: data[9b] = ee
+ RTW: data[9c] = ee
+ RTW: data[9d] = ee
+ RTW: data[9e] = ee
+ RTW: data[9f] = ee
+ RTW: data[a0] = 1d
+ RTW: data[a1] = 1d
+ RTW: data[a2] = 1d
+ RTW: data[a3] = 1b
+ RTW: data[a4] = 1d
+ RTW: data[a5] = 1c
+ RTW: data[a6] = 1a
+ RTW: data[a7] = 1a
+ RTW: data[a8] = 1c
+ RTW: data[a9] = 1c
+ RTW: data[aa] = 1e
+ RTW: data[ab] = 1e
+ RTW: data[ac] = 1f
+ RTW: data[ad] = 20
+ RTW: data[ae] = f1
+ RTW: data[af] = ee
+ RTW: data[b0] = ee
+ RTW: data[b1] = ee
+ RTW: data[b2] = ee
+ RTW: data[b3] = ee
+ RTW: data[b4] = 0
+ RTW: data[b5] = ee
+ RTW: data[b6] = ee
+ RTW: data[b7] = ee
+ RTW: data[b8] = 7f
+ RTW: data[b9] = 3f
+ RTW: data[ba] = 2b
+ RTW: data[bb] = 0
+ RTW: data[bc] = f
+ RTW: data[bd] = 0
+ RTW: data[be] = 0
+ RTW: data[bf] = 88
+ RTW: data[c0] = 88
+ RTW: data[c1] = 1
+ RTW: data[c2] = 0
+ RTW: data[c3] = 0
+ RTW: data[c4] = 0
+ RTW: data[c5] = 0
+ RTW: data[c6] = 0
+ RTW: data[c7] = 55
+ RTW: data[c8] = 0
+ RTW: data[c9] = ff
+ RTW: data[ca] = 1
+ RTW: data[cb] = ff
+ RTW: data[cc] = ff
+ RTW: data[cd] = ff
+ RTW: data[ce] = ff
+ RTW: data[cf] = ff
+ RTW: data[d0] = da
+ RTW: data[d1] = b
+ RTW: data[d2] = 13
+ RTW: data[d3] = 88
+ RTW: data[d4] = e3
+ RTW: data[d5] = 66
+ RTW: data[d8] = 1c
+ RTW: data[d9] = bf
+ RTW: data[da] = ce
+ RTW: data[db] = 76
+ RTW: data[dc] = 6d
+ RTW: data[dd] = b
+ RTW: data[de] = 9
+ RTW: data[df] = 3
+ RTW: data[e0] = 52
+ RTW: data[e1] = 65
+ RTW: data[e2] = 61
+ RTW: data[e3] = 6c
+ RTW: data[e4] = 74
+ RTW: data[e5] = 65
+ RTW: data[e6] = 6b
+ RTW: data[e7] = e
+ RTW: data[e8] = 3
+ RTW: data[e9] = 38
+ RTW: data[ea] = 30
+ RTW: data[eb] = 32
+ RTW: data[ec] = 2e
+ RTW: data[ed] = 31
+ RTW: data[ee] = 31
+ RTW: data[ef] = 61
+ RTW: data[f0] = 63
+ RTW: data[f1] = 20
+ RTW: data[f2] = 4e
+ RTW: data[f3] = 49
+ RTW: data[f4] = 43
+ RTW: data[f5] = 8
+ RTW: data[f6] = 3
+ RTW: data[f7] = 31
+ RTW: data[f8] = 32
+ RTW: data[f9] = 33
+ RTW: data[fa] = 34
+ RTW: data[fb] = 35
+ RTW: data[fc] = 36
+ RTW: data[fd] = ff
+ RTW: data[fe] = ff
+ RTW: data[ff] = ff
+ RTW: data[100] = ff
+ RTW: data[101] = ff
+ RTW: data[102] = ff
+ RTW: data[103] = ff
+ RTW: data[104] = ff
+ RTW: data[105] = ff
+ RTW: data[106] = ff
+ RTW: data[107] = ff
+ RTW: data[108] = ff
+ RTW: data[109] = ff
+ RTW: data[10a] = ff
+ RTW: data[10b] = ff
+ RTW: data[10c] = ff
+ RTW: data[10d] = ff
+ RTW: data[10e] = ff
+ RTW: data[10f] = ff
+ RTW: data[110] = ff
+ RTW: data[111] = ff
+ RTW: data[112] = ff
+ RTW: data[113] = ff
+ RTW: data[114] = ff
+ RTW: data[115] = ff
+ RTW: data[120] = ff
+ RTW: data[121] = ff
+ RTW: data[122] = ff
+ RTW: data[123] = ff
+ RTW: data[124] = ff
+ RTW: data[125] = ff
+ RTW: data[126] = ff
+ RTW: data[127] = ff
+ RTW: data[12c] = ff
+ RTW: data[12d] = 4
+ RTW: HW EFUSE
+ RTW: 0x000: 29 81 0D F4  0D 0C 18 00  80 00 00 08  08 19 12 10  
+ RTW: 0x010: 2E 2D 2D 2D  2D 2D 2D 2D  2C 2C 2C FE  EE EE EE EE  
+ RTW: 0x020: EE EE 26 26  26 26 2A 28  28 28 28 28  25 26 26 27  
+ RTW: 0x030: D0 EE EE EE  EE EE F0 EE  EE EE 2B 2B  2B 2B 2B 2B  
+ RTW: 0x040: 2C 2C 2B 2B  2B FF EE EE  EE EE EE EE  1E 1E 1E 1E  
+ RTW: 0x050: 1E 1E 1E 1E  1E 1E 1E 1E  1E 1E F0 EE  EE EE EE FF  
+ RTW: 0x060: F0 EE EE EE  31 30 30 31  31 31 30 30  30 2F 2F EE  
+ RTW: 0x070: EE EE EE EE  EE EE 23 22  23 24 19 18  18 16 15 15  
+ RTW: 0x080: 19 1A 1C 1E  F1 EE EE EE  EE EE F0 EE  EE EE 37 36  
+ RTW: 0x090: 35 36 36 36  34 34 34 32  32 DC EE EE  EE EE EE EE  
+ RTW: 0x0A0: 1D 1D 1D 1B  1D 1C 1A 1A  1C 1C 1E 1E  1F 20 F1 EE  
+ RTW: 0x0B0: EE EE EE EE  00 EE EE EE  7F 3F 2B 00  0F 00 00 88  
+ RTW: 0x0C0: 88 01 00 00  00 00 00 55  00 FF 01 FF  FF FF FF FF  
+ RTW: 0x0D0: DA 0B 13 88  E3 66 FF FF  1C BF CE 76  6D 0B 09 03  
+ RTW: 0x0E0: 52 65 61 6C  74 65 6B 0E  03 38 30 32  2E 31 31 61  
+ RTW: 0x0F0: 63 20 4E 49  43 08 03 31  32 33 34 35  36 FF FF FF  
+ RTW: 0x100: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x110: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF 04 FF FF  
+ RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x150: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x160: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x170: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x190: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: VID = 0x0BDA, PID = 0x8813
+ RTW: Customer ID: 0x00, SubCustomer ID: 0xCD
+ RTW: EEPROMRegulatory = 0x1
+ RTW: EEPROMBluetoothCoexist = 0, EEPROMBluetoothAntNum = Ant_x2
+ RTW: hal_com_config_channel_plan chplan:0x7F
+ RTW: crystal_cap: 0x3f
+ RTW: ThermalMeter = 0x2b
+ RTW: hal_ReadRemoteWakeup_8814A...bSupportRemoteWakeup(0)
+ RTW: SWAS: bHwAntDiv = 0, TRxAntDivType = 0
+ RTW: pHalData->ExternalPA_2G = 0, pHalData->external_pa_5g = 1
+ RTW: pHalData->ExternalLNA_2G = 0, pHalData->external_lna_5g = 1
+ RTW: pHalData->TypeGPA = 0x0, pHalData->TypeAPA = 0x0
+ RTW: pHalData->TypeGLNA = 0x0, pHalData->TypeALNA = 0x0
+ RTW: RFE Type: 0x 1
+ RTW: PowerTracking Type: 0x 0
+ RTW: Usb Switch: 1
+ RTW: PID= 0x8813, VID=  bda
+ RTW: Customer ID: 0x 0
+ RTW: hal_GetRxGainOffset_8814A(): AutoloadFail = 0!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_2G = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GL = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GM = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GH = 0xffff!!
+ RTW: registrypriv.RegPwrTrimEnable = 2
+ RTW: kfree flag:0
+ RTW: rtw_hal_read_chip_info in 113 ms
+ RTW: init_channel_set((null)) ChannelPlan ID:0x7f, ch num:37
+ RTW: EEPROM RF set 4T4R
+ RTW: default rf type: 4
+ RTW: [8814A] Final rf_config: 4
+ RTW: rtw_hal_rfpath_init trx_path_bmp:0x3f(RF_2T4R), NumTotalRFPath:4, max_tx_cnt:2
+ RTW: [TRX_Nss] HALSPEC - tx_nss :3, rx_nss:3
+ RTW: [TRX_Nss] Registry - tx_nss :0, rx_nss:0
+ RTW: [TRX_Nss] HALDATA - tx_nss :2, rx_nss:3
+ RTW: rtw_hal_trxnss_init tx_nss:2, rx_nss:3
+ RTW: init_mlme_default_rate_set: support CCK
+ RTW: init_mlme_default_rate_set: support OFDM
+ RTW: NR_RECVBUFF: 8
+ RTW: MAX_RECVBUF_SZ: 32768
+ RTW: NR_PREALLOC_RECV_SKB: 8
+ RTW: rtw_alloc_macid((null)) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_init_pwrctrl_priv: IPS_mode=0, LPS_mode=0, LPS_level=0
+ RTW: IQK FW offload:disable
+ RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+ RTW: can't get autopm:
+ RTW: rtw_macaddr_cfg mac addr:1c:bf:ce:76:6d:0b
+ RTW: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+ RTW: rtw_wiphy_alloc(phy0)
+ RTW: rtw_wdev_alloc(padapter=00000000de473feb)
+ RTW: rtw_wiphy_register(phy0)
+ RTW: Register RTW cfg80211 vendor cmd(0x67) interface
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_init(wlan0) if1 mac_addr=1c:bf:ce:76:6d:0b
+ RTW: rtw_ndev_notifier_call(wlan0) state:17
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlan0) state:5
+ RTW: module init ret=0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:11
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=0
+ RTW:  power-on :REG_SYS_CLKR 0x09=0xb0. REG_CR 0x100=0xea.
+ RTW:  MAC has not been powered on yet.
+ RTW: ===>_InitQueueReservedPage_8814AUsb()
+ RTW: <===_InitQueueReservedPage_8814AUsb()
+ RTW: FirmwareDownload8814A fw source from Header
+ RTW: FirmwareDownload8814A fw:NIC, size: 68320
+ RTW: FirmwareDownload8814A: fw_ver=33 fw_subver=6 sig=0x8814
+ RTW: HalROMDownloadFWRSVDPage8814A(): There is an Adapter is sending beacon.
+ RTW: dmem_pkt_size = 5792, iram_pkt_size = 62464,FWHeaderSize = 64, Len = 68320!!
+ RTW: MaxRsvdPageBufSize 1488,  Total len 68320
+ RTW: Check sum OK
+ RTW: dmem check sum tmp 33
+ RTW: Check sum OK
+ RTW: imem check sum tmp 105
+ RTW: FWDL success. write_fw:0, 76ms
+ RTW: rtl8814au_hal_init: Download Firmware Success!!
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: txpath=0x3, rxpath=0xf
+ RTW: txpath_1ss:0x1, num:1
+ RTW: txpath_2ss:0x3, num:2
+ RTW: rtl8814au_hal_init in 394ms
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: rtw_hal_get_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: [HW_VAR_ENABLE_RX_BAR] 0x6A2=0x520
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: Registry kfree default force disable.
+ RTW: MAC Address = 1c:bf:ce:76:6d:0b
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) start RTW_CMD_THREAD
+ RTW: rtw_cfg80211_init_wiphy:rf_type=4
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [warning] rf_type 4 is not expected
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line806, Available RX buf size = 32712 bytes
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_set_power_mgmt(wlx1cbfce766d0b) enabled:0, timeout:-1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ps_deny_cancel(wlx1cbfce766d0b): [ERROR] Reason 7 had been canceled before!!
+ RTW: set_mode = IW_MODE_INFRA
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: set bssid:00:00:00:00:00:00
+ RTW: =>rtw_wx_set_essid
+ RTW: <=rtw_wx_set_essid, ret 0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(42) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(40) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: module exit start
+ RTW: ###=> usb_read_port_complete => urb.status(-108)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(True) OR bSurpriseRemoved(False)
+ RTW: +rtw_dev_remove
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:10
+ RTW: netdev_close(wlx1cbfce766d0b) , bup=1
+ RTW: (2)871x_drv - drv_close, bup=1, hw_init_completed=_TRUE
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b)- bDriverStopped(True) bSurpriseRemoved(False)
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b) Exit
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 0
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) call cfg80211_disconnected, reason:0
+ RTW: -871x_drv - drv_close, bup=1
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=0, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=1, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=2, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=3, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=4, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=5, addr=(null)
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:6
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:18
+ RTW: rtw_ndev_uninit(wlx1cbfce766d0b) if1
+ RTW: rtw_wdev_unregister(wdev=00000000e0137638)
+ RTW: rtw_wiphy_unregister(phy0)
+ RTW: Vendor: Unregister RTW cfg80211 vendor interface
+ RTW: rtw_pm_set_ips IPS_NONE
+ RTW: rtw_pm_set_ips: bDriverStopped=True, bup=1, hw_init_completed=1
+ RTW: rtw_usb_primary_adapter_deinit(wlx1cbfce766d0b)
+ RTW: ==> rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: usb_read_port_cancel
+ RTW: usb_write_port_cancel
+ RTW: rtw_stop_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_hal_check_ips_status: hal_func.check_ips_status is NULL!
+ RTW: rtw_dev_unload: driver not in IPS
+ RTW: ==> rtl8814au_hal_deinit
+ RTW: CardDisableRTL8814AU
+ RTW: <== rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: +r871xu_dev_remove, hw_init_completed=0
+ RTW: WARN free_recv_skb_queue not empty, 1
+ RTW: rtw_wdev_free(wdev=00000000e0137638)
+ RTW: rtw_wiphy_free(phy0)
+ RTW: rtw_inetaddr_notifier_unregister
+ RTW: module exit success
+ RTW: module init start
+ RTW: rtl8814au v5.8.5.1_35583.20191029
+ RTW: rtw_inetaddr_notifier_register
+ RTW: usb_endpoint_descriptor(0):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=81
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_in = 1
+ RTW: usb_endpoint_descriptor(1):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=2
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 2
+ RTW: usb_endpoint_descriptor(2):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=3
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 3
+ RTW: usb_endpoint_descriptor(3):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=4
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 4
+ RTW: usb_endpoint_descriptor(4):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=85
+ RTW: wMaxPacketSize=64
+ RTW: bInterval=1
+ RTW: RT_usb_endpoint_is_int_in = 5, Interval = 1
+ RTW: nr_endpoint=5, in_num=2, out_num=3
+ RTW: USB_SPEED_HIGH
+ RTW: CHIP TYPE: RTL8814
+ RTW: read_chip_version_8814a SYS_CFG(0xF0)=0x04441135
+ RTW: Chip Version Info: CHIP_8814A_S2_3T3R_RomVer(0)
+ RTW: _ConfigChipOutEP_8814 OutEpQueueSel(0x07), OutEpNumber(3)
+ RTW: ====> Hal_InitEfuseVars_8814A
+ RTW: ====>pEfuseHal->WordUnit 4
+ RTW: ====>pEfuseHal->OOBProtectBytes 15
+ RTW: ====>pEfuseHal->ProtectBytes 16
+ RTW: ====>pEfuseHal->MaxSecNum_WiFi 64
+ RTW: ====>pEfuseHal->PhysicalLen_WiFi 1024
+ RTW: ====>pEfuseHal->LogicalLen_WiFi 512
+ RTW: Hal_InitEfuseVars_8814A <====
+ RTW: Boot from EFUSE, Autoload OK !
+ RTW: data[0] = 29
+ RTW: data[1] = 81
+ RTW: data[2] = d
+ RTW: data[3] = f4
+ RTW: data[4] = d
+ RTW: data[5] = c
+ RTW: data[6] = 18
+ RTW: data[7] = 0
+ RTW: data[8] = 80
+ RTW: data[9] = 0
+ RTW: data[a] = 0
+ RTW: data[b] = 8
+ RTW: data[c] = 8
+ RTW: data[d] = 19
+ RTW: data[e] = 12
+ RTW: data[f] = 10
+ RTW: data[10] = 2e
+ RTW: data[11] = 2d
+ RTW: data[12] = 2d
+ RTW: data[13] = 2d
+ RTW: data[14] = 2d
+ RTW: data[15] = 2d
+ RTW: data[16] = 2d
+ RTW: data[17] = 2d
+ RTW: data[18] = 2c
+ RTW: data[19] = 2c
+ RTW: data[1a] = 2c
+ RTW: data[1b] = fe
+ RTW: data[1c] = ee
+ RTW: data[1d] = ee
+ RTW: data[1e] = ee
+ RTW: data[1f] = ee
+ RTW: data[20] = ee
+ RTW: data[21] = ee
+ RTW: data[22] = 26
+ RTW: data[23] = 26
+ RTW: data[24] = 26
+ RTW: data[25] = 26
+ RTW: data[26] = 2a
+ RTW: data[27] = 28
+ RTW: data[28] = 28
+ RTW: data[29] = 28
+ RTW: data[2a] = 28
+ RTW: data[2b] = 28
+ RTW: data[2c] = 25
+ RTW: data[2d] = 26
+ RTW: data[2e] = 26
+ RTW: data[2f] = 27
+ RTW: data[30] = d0
+ RTW: data[31] = ee
+ RTW: data[32] = ee
+ RTW: data[33] = ee
+ RTW: data[34] = ee
+ RTW: data[35] = ee
+ RTW: data[36] = f0
+ RTW: data[37] = ee
+ RTW: data[38] = ee
+ RTW: data[39] = ee
+ RTW: data[3a] = 2b
+ RTW: data[3b] = 2b
+ RTW: data[3c] = 2b
+ RTW: data[3d] = 2b
+ RTW: data[3e] = 2b
+ RTW: data[3f] = 2b
+ RTW: data[40] = 2c
+ RTW: data[41] = 2c
+ RTW: data[42] = 2b
+ RTW: data[43] = 2b
+ RTW: data[44] = 2b
+ RTW: data[45] = ff
+ RTW: data[46] = ee
+ RTW: data[47] = ee
+ RTW: data[48] = ee
+ RTW: data[49] = ee
+ RTW: data[4a] = ee
+ RTW: data[4b] = ee
+ RTW: data[4c] = 1e
+ RTW: data[4d] = 1e
+ RTW: data[4e] = 1e
+ RTW: data[4f] = 1e
+ RTW: data[50] = 1e
+ RTW: data[51] = 1e
+ RTW: data[52] = 1e
+ RTW: data[53] = 1e
+ RTW: data[54] = 1e
+ RTW: data[55] = 1e
+ RTW: data[56] = 1e
+ RTW: data[57] = 1e
+ RTW: data[58] = 1e
+ RTW: data[59] = 1e
+ RTW: data[5a] = f0
+ RTW: data[5b] = ee
+ RTW: data[5c] = ee
+ RTW: data[5d] = ee
+ RTW: data[5e] = ee
+ RTW: data[5f] = ff
+ RTW: data[60] = f0
+ RTW: data[61] = ee
+ RTW: data[62] = ee
+ RTW: data[63] = ee
+ RTW: data[64] = 31
+ RTW: data[65] = 30
+ RTW: data[66] = 30
+ RTW: data[67] = 31
+ RTW: data[68] = 31
+ RTW: data[69] = 31
+ RTW: data[6a] = 30
+ RTW: data[6b] = 30
+ RTW: data[6c] = 30
+ RTW: data[6d] = 2f
+ RTW: data[6e] = 2f
+ RTW: data[6f] = ee
+ RTW: data[70] = ee
+ RTW: data[71] = ee
+ RTW: data[72] = ee
+ RTW: data[73] = ee
+ RTW: data[74] = ee
+ RTW: data[75] = ee
+ RTW: data[76] = 23
+ RTW: data[77] = 22
+ RTW: data[78] = 23
+ RTW: data[79] = 24
+ RTW: data[7a] = 19
+ RTW: data[7b] = 18
+ RTW: data[7c] = 18
+ RTW: data[7d] = 16
+ RTW: data[7e] = 15
+ RTW: data[7f] = 15
+ RTW: data[80] = 19
+ RTW: data[81] = 1a
+ RTW: data[82] = 1c
+ RTW: data[83] = 1e
+ RTW: data[84] = f1
+ RTW: data[85] = ee
+ RTW: data[86] = ee
+ RTW: data[87] = ee
+ RTW: data[88] = ee
+ RTW: data[89] = ee
+ RTW: data[8a] = f0
+ RTW: data[8b] = ee
+ RTW: data[8c] = ee
+ RTW: data[8d] = ee
+ RTW: data[8e] = 37
+ RTW: data[8f] = 36
+ RTW: data[90] = 35
+ RTW: data[91] = 36
+ RTW: data[92] = 36
+ RTW: data[93] = 36
+ RTW: data[94] = 34
+ RTW: data[95] = 34
+ RTW: data[96] = 34
+ RTW: data[97] = 32
+ RTW: data[98] = 32
+ RTW: data[99] = dc
+ RTW: data[9a] = ee
+ RTW: data[9b] = ee
+ RTW: data[9c] = ee
+ RTW: data[9d] = ee
+ RTW: data[9e] = ee
+ RTW: data[9f] = ee
+ RTW: data[a0] = 1d
+ RTW: data[a1] = 1d
+ RTW: data[a2] = 1d
+ RTW: data[a3] = 1b
+ RTW: data[a4] = 1d
+ RTW: data[a5] = 1c
+ RTW: data[a6] = 1a
+ RTW: data[a7] = 1a
+ RTW: data[a8] = 1c
+ RTW: data[a9] = 1c
+ RTW: data[aa] = 1e
+ RTW: data[ab] = 1e
+ RTW: data[ac] = 1f
+ RTW: data[ad] = 20
+ RTW: data[ae] = f1
+ RTW: data[af] = ee
+ RTW: data[b0] = ee
+ RTW: data[b1] = ee
+ RTW: data[b2] = ee
+ RTW: data[b3] = ee
+ RTW: data[b4] = 0
+ RTW: data[b5] = ee
+ RTW: data[b6] = ee
+ RTW: data[b7] = ee
+ RTW: data[b8] = 7f
+ RTW: data[b9] = 3f
+ RTW: data[ba] = 2b
+ RTW: data[bb] = 0
+ RTW: data[bc] = f
+ RTW: data[bd] = 0
+ RTW: data[be] = 0
+ RTW: data[bf] = 88
+ RTW: data[c0] = 88
+ RTW: data[c1] = 1
+ RTW: data[c2] = 0
+ RTW: data[c3] = 0
+ RTW: data[c4] = 0
+ RTW: data[c5] = 0
+ RTW: data[c6] = 0
+ RTW: data[c7] = 55
+ RTW: data[c8] = 0
+ RTW: data[c9] = ff
+ RTW: data[ca] = 1
+ RTW: data[cb] = ff
+ RTW: data[cc] = ff
+ RTW: data[cd] = ff
+ RTW: data[ce] = ff
+ RTW: data[cf] = ff
+ RTW: data[d0] = da
+ RTW: data[d1] = b
+ RTW: data[d2] = 13
+ RTW: data[d3] = 88
+ RTW: data[d4] = e3
+ RTW: data[d5] = 66
+ RTW: data[d8] = 1c
+ RTW: data[d9] = bf
+ RTW: data[da] = ce
+ RTW: data[db] = 76
+ RTW: data[dc] = 6d
+ RTW: data[dd] = b
+ RTW: data[de] = 9
+ RTW: data[df] = 3
+ RTW: data[e0] = 52
+ RTW: data[e1] = 65
+ RTW: data[e2] = 61
+ RTW: data[e3] = 6c
+ RTW: data[e4] = 74
+ RTW: data[e5] = 65
+ RTW: data[e6] = 6b
+ RTW: data[e7] = e
+ RTW: data[e8] = 3
+ RTW: data[e9] = 38
+ RTW: data[ea] = 30
+ RTW: data[eb] = 32
+ RTW: data[ec] = 2e
+ RTW: data[ed] = 31
+ RTW: data[ee] = 31
+ RTW: data[ef] = 61
+ RTW: data[f0] = 63
+ RTW: data[f1] = 20
+ RTW: data[f2] = 4e
+ RTW: data[f3] = 49
+ RTW: data[f4] = 43
+ RTW: data[f5] = 8
+ RTW: data[f6] = 3
+ RTW: data[f7] = 31
+ RTW: data[f8] = 32
+ RTW: data[f9] = 33
+ RTW: data[fa] = 34
+ RTW: data[fb] = 35
+ RTW: data[fc] = 36
+ RTW: data[fd] = ff
+ RTW: data[fe] = ff
+ RTW: data[ff] = ff
+ RTW: data[100] = ff
+ RTW: data[101] = ff
+ RTW: data[102] = ff
+ RTW: data[103] = ff
+ RTW: data[104] = ff
+ RTW: data[105] = ff
+ RTW: data[106] = ff
+ RTW: data[107] = ff
+ RTW: data[108] = ff
+ RTW: data[109] = ff
+ RTW: data[10a] = ff
+ RTW: data[10b] = ff
+ RTW: data[10c] = ff
+ RTW: data[10d] = ff
+ RTW: data[10e] = ff
+ RTW: data[10f] = ff
+ RTW: data[110] = ff
+ RTW: data[111] = ff
+ RTW: data[112] = ff
+ RTW: data[113] = ff
+ RTW: data[114] = ff
+ RTW: data[115] = ff
+ RTW: data[120] = ff
+ RTW: data[121] = ff
+ RTW: data[122] = ff
+ RTW: data[123] = ff
+ RTW: data[124] = ff
+ RTW: data[125] = ff
+ RTW: data[126] = ff
+ RTW: data[127] = ff
+ RTW: data[12c] = ff
+ RTW: data[12d] = 4
+ RTW: HW EFUSE
+ RTW: 0x000: 29 81 0D F4  0D 0C 18 00  80 00 00 08  08 19 12 10  
+ RTW: 0x010: 2E 2D 2D 2D  2D 2D 2D 2D  2C 2C 2C FE  EE EE EE EE  
+ RTW: 0x020: EE EE 26 26  26 26 2A 28  28 28 28 28  25 26 26 27  
+ RTW: 0x030: D0 EE EE EE  EE EE F0 EE  EE EE 2B 2B  2B 2B 2B 2B  
+ RTW: 0x040: 2C 2C 2B 2B  2B FF EE EE  EE EE EE EE  1E 1E 1E 1E  
+ RTW: 0x050: 1E 1E 1E 1E  1E 1E 1E 1E  1E 1E F0 EE  EE EE EE FF  
+ RTW: 0x060: F0 EE EE EE  31 30 30 31  31 31 30 30  30 2F 2F EE  
+ RTW: 0x070: EE EE EE EE  EE EE 23 22  23 24 19 18  18 16 15 15  
+ RTW: 0x080: 19 1A 1C 1E  F1 EE EE EE  EE EE F0 EE  EE EE 37 36  
+ RTW: 0x090: 35 36 36 36  34 34 34 32  32 DC EE EE  EE EE EE EE  
+ RTW: 0x0A0: 1D 1D 1D 1B  1D 1C 1A 1A  1C 1C 1E 1E  1F 20 F1 EE  
+ RTW: 0x0B0: EE EE EE EE  00 EE EE EE  7F 3F 2B 00  0F 00 00 88  
+ RTW: 0x0C0: 88 01 00 00  00 00 00 55  00 FF 01 FF  FF FF FF FF  
+ RTW: 0x0D0: DA 0B 13 88  E3 66 FF FF  1C BF CE 76  6D 0B 09 03  
+ RTW: 0x0E0: 52 65 61 6C  74 65 6B 0E  03 38 30 32  2E 31 31 61  
+ RTW: 0x0F0: 63 20 4E 49  43 08 03 31  32 33 34 35  36 FF FF FF  
+ RTW: 0x100: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x110: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF 04 FF FF  
+ RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x150: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x160: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x170: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x190: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: VID = 0x0BDA, PID = 0x8813
+ RTW: Customer ID: 0x00, SubCustomer ID: 0xCD
+ RTW: EEPROMRegulatory = 0x1
+ RTW: EEPROMBluetoothCoexist = 0, EEPROMBluetoothAntNum = Ant_x2
+ RTW: hal_com_config_channel_plan chplan:0x7F
+ RTW: crystal_cap: 0x3f
+ RTW: ThermalMeter = 0x2b
+ RTW: hal_ReadRemoteWakeup_8814A...bSupportRemoteWakeup(0)
+ RTW: SWAS: bHwAntDiv = 0, TRxAntDivType = 0
+ RTW: pHalData->ExternalPA_2G = 0, pHalData->external_pa_5g = 1
+ RTW: pHalData->ExternalLNA_2G = 0, pHalData->external_lna_5g = 1
+ RTW: pHalData->TypeGPA = 0x0, pHalData->TypeAPA = 0x0
+ RTW: pHalData->TypeGLNA = 0x0, pHalData->TypeALNA = 0x0
+ RTW: RFE Type: 0x 1
+ RTW: PowerTracking Type: 0x 0
+ RTW: Usb Switch: 1
+ RTW: PID= 0x8813, VID=  bda
+ RTW: Customer ID: 0x 0
+ RTW: hal_GetRxGainOffset_8814A(): AutoloadFail = 0!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_2G = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GL = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GM = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GH = 0xffff!!
+ RTW: registrypriv.RegPwrTrimEnable = 2
+ RTW: kfree flag:0
+ RTW: rtw_hal_read_chip_info in 113 ms
+ RTW: init_channel_set((null)) ChannelPlan ID:0x7f, ch num:37
+ RTW: EEPROM RF set 4T4R
+ RTW: default rf type: 4
+ RTW: [8814A] Final rf_config: 4
+ RTW: rtw_hal_rfpath_init trx_path_bmp:0x3f(RF_2T4R), NumTotalRFPath:4, max_tx_cnt:2
+ RTW: [TRX_Nss] HALSPEC - tx_nss :3, rx_nss:3
+ RTW: [TRX_Nss] Registry - tx_nss :0, rx_nss:0
+ RTW: [TRX_Nss] HALDATA - tx_nss :2, rx_nss:3
+ RTW: rtw_hal_trxnss_init tx_nss:2, rx_nss:3
+ RTW: init_mlme_default_rate_set: support CCK
+ RTW: init_mlme_default_rate_set: support OFDM
+ RTW: NR_RECVBUFF: 8
+ RTW: MAX_RECVBUF_SZ: 32768
+ RTW: NR_PREALLOC_RECV_SKB: 8
+ RTW: rtw_alloc_macid((null)) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_init_pwrctrl_priv: IPS_mode=0, LPS_mode=0, LPS_level=0
+ RTW: IQK FW offload:disable
+ RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+ RTW: can't get autopm:
+ RTW: rtw_macaddr_cfg mac addr:1c:bf:ce:76:6d:0b
+ RTW: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+ RTW: rtw_wiphy_alloc(phy0)
+ RTW: rtw_wdev_alloc(padapter=00000000ace4a915)
+ RTW: rtw_wiphy_register(phy0)
+ RTW: Register RTW cfg80211 vendor cmd(0x67) interface
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_init(wlan0) if1 mac_addr=1c:bf:ce:76:6d:0b
+ RTW: rtw_ndev_notifier_call(wlan0) state:17
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlan0) state:5
+ RTW: module init ret=0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:11
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=0
+ RTW:  power-on :REG_SYS_CLKR 0x09=0xb0. REG_CR 0x100=0xea.
+ RTW:  MAC has not been powered on yet.
+ RTW: ===>_InitQueueReservedPage_8814AUsb()
+ RTW: <===_InitQueueReservedPage_8814AUsb()
+ RTW: FirmwareDownload8814A fw source from Header
+ RTW: FirmwareDownload8814A fw:NIC, size: 68320
+ RTW: FirmwareDownload8814A: fw_ver=33 fw_subver=6 sig=0x8814
+ RTW: HalROMDownloadFWRSVDPage8814A(): There is an Adapter is sending beacon.
+ RTW: dmem_pkt_size = 5792, iram_pkt_size = 62464,FWHeaderSize = 64, Len = 68320!!
+ RTW: MaxRsvdPageBufSize 1488,  Total len 68320
+ RTW: Check sum OK
+ RTW: dmem check sum tmp 33
+ RTW: Check sum OK
+ RTW: imem check sum tmp 105
+ RTW: FWDL success. write_fw:0, 74ms
+ RTW: rtl8814au_hal_init: Download Firmware Success!!
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: txpath=0x3, rxpath=0xf
+ RTW: txpath_1ss:0x1, num:1
+ RTW: txpath_2ss:0x3, num:2
+ RTW: rtl8814au_hal_init in 392ms
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: rtw_hal_get_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: [HW_VAR_ENABLE_RX_BAR] 0x6A2=0x520
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: Registry kfree default force disable.
+ RTW: MAC Address = 1c:bf:ce:76:6d:0b
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) start RTW_CMD_THREAD
+ RTW: rtw_cfg80211_init_wiphy:rf_type=4
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [warning] rf_type 4 is not expected
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line806, Available RX buf size = 32712 bytes
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_set_power_mgmt(wlx1cbfce766d0b) enabled:0, timeout:-1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ps_deny_cancel(wlx1cbfce766d0b): [ERROR] Reason 7 had been canceled before!!
+ RTW: set_mode = IW_MODE_INFRA
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: set bssid:00:00:00:00:00:00
+ RTW: =>rtw_wx_set_essid
+ RTW: <=rtw_wx_set_essid, ret 0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(36) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 3
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(f) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=(null)
+ RTW: flush all sta, and cam_entry
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_start_ap(wlx1cbfce766d0b) hidden_ssid:0, auth_type:8
+ RTW: rtw_cfg80211_set_auth_type, nl80211_auth_type=8
+ RTW: rtw_add_beacon beacon_head_len=66, beacon_tail_len=114
+ RTW: rtw_check_beacon_data, len=156
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line806, Available RX buf size = 32712 bytes
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: update_hw_ht_param
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 1c:bf:ce:76:6d:0b
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 excl_ifbmp:0x00 req:0,-1,-1
+ RTW: rtw_ap_chbw_decision others ld_sta_num:0, lg_sta_num:0, ap_num:0, mesh_num:0
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 tmp union:36,2,1
+ RTW: rtw_ap_chbw_decision(wlx1cbfce766d0b) 36,2,1 => 36,2,1
+ RTW: rtw_ap_chbw_decision union:36,2,1
+ RTW: HW_VAR_BASIC_RATE: 0x15f->0x15f->0x15f
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:1, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:1, SM_PS 3
+ RTW: MediaStatusRpt parm:01 01 00 
+ RTW: wlx1cbfce766d0b BMC Init Tx rate - OFDM_24M
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: rtw_cfg80211_indicate_connect(wlx1cbfce766d0b)
+ RTW: assoc success
+ RTW: cfg80211_rtw_change_bss(wlx1cbfce766d0b)
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VO = 0x002f3219
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VI = 0x005e4319
+ RTW: cfg80211_rtw_set_mac_acl(wlx1cbfce766d0b) acl_policy:0, entry_num:0
+ RTW: rtw_set_macaddr_acl(wlx1cbfce766d0b) p=1, mode=1
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BE = 0x0000642b
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BK = 0x0000a44f
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 0 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(44) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: +OnAuth
+ RTW: auth alg=0, seq=1
+ RTW: going to alloc stainfo for sa=1c:bf:ce:db:f4:62
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: issue_auth
+ RTW: OnAssocReq
+ RTW: IEEE 802.11 element parse ignored unknown element (id=127 elen=8)
+ RTW: STA did not include WPA/RSN IE in (Re)Association Request - possible WPS use
+ RTW: OnAssocReq(wlx1cbfce766d0b) allocate new AID=1
+ RTW: HT: STA 1c:bf:ce:db:f4:62 HT Capabilities Info: 0x186f
+ RTW: bss_cap_update_on_sta_join STA 1c:bf:ce:db:f4:62 - no greenfield, num of non-gf stations 1
+ RTW: rtw_ht_operation_update current operation mode=0x0
+ RTW: rtw_ht_operation_update new operation mode=0x4 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x4
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: associated_stainfo_update: 1c:bf:ce:db:f4:62, updated_type=0x3f
+ RTW: bss_cap_update_on_sta_join, updated=1
+ RTW: update_sta_info_apmode
+ RTW: Enable HT Tx LDPC for STA(1)
+ RTW: Current STA(1) VHT LDPC = 0A
+ RTW: Current STA(1) VHT STBC = 0A
+ RTW: Current STA(1) VHT Beamforming Setting = 1203
+ RTW: ### Set STA_(0) info ###
+ RTW: issue_asocrsp
+ RTW: report_add_sta_event: add STA
+ RTW: MediaStatusRpt parm:11 00 00 
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:0, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:0, SM_PS 3
+ RTW: vht_mcs_map=ea ff, nss=2 => bitmap=00000000000fffff
+ RTW: rtw_ap_update_sta_ra_info=> mac_id:0 , tx_ra_bitmap:0x00000000fffffff0, networkType:0x44
+ RTW: ============ STA [1c:bf:ce:db:f4:62]  ===================
+ RTW: mac_id : 0
+ RTW: wireless_mode : 0x44
+ RTW: mimo_type : 3
+ RTW: static smps : N
+ RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+ RTW: rate_id : 9
+ RTW: rssi : -1 (%), rssi_level : 0
+ RTW: is_support_sgi : Y, is_vht_enable : Y
+ RTW: disable_ra : N, disable_pt : N
+ RTW: is_noisy : N
+ RTW: txrx_state : 0
+ RTW: curr_tx_rate : CCK_1M (L)
+ RTW: curr_tx_bw : 20MHz
+ RTW: curr_retry_ratio : 0
+ RTW: ra_mask : 0x00000000fffffff0
+ RTW: indicate_sta_assoc_event to upper layer - hostapd
+ RTW: rtw_cfg80211_indicate_sta_assoc(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: [dvobj:00000000d35455f5][ERROR] continual_io_error:5 > 4
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b)- bDriverStopped(False) bSurpriseRemoved(True)
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b) Exit
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_stop_ap(wlx1cbfce766d0b)
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to 1c:bf:ce:db:f4:62
+ RTW: rtw_cfg80211_indicate_sta_disassoc(wlx1cbfce766d0b)
+ RTW: rtw_ht_operation_update current operation mode=0x4
+ RTW: rtw_ht_operation_update new operation mode=0x0 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x0
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: bss_cap_update_on_sta_leave, updated=1
+ RTW: report_del_sta_event(wlx1cbfce766d0b) 1c:bf:ce:db:f4:62 mac_id=0, enqueue:1, res:0
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: ### Clean STA_(0) info ###
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=2, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=3, new_iftype=2
+ RTW: stop_ap_mode -wlx1cbfce766d0b
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: rtw_sta_mstatus_disc_rpt(wlx1cbfce766d0b) - mac_id=1 shared
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_wx_get_rts, rts_thresh=2347
+ RTW: rtw_wx_get_frag, frag_len=2346
+ RTW: module exit start
+ RTW: +rtw_dev_remove
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:10
+ RTW: netdev_close(wlx1cbfce766d0b) , bup=1
+ RTW: (2)871x_drv - drv_close, bup=1, hw_init_completed=_TRUE
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) ,reason = 0
+ RTW: rtw_cfg80211_indicate_disconnect(wlx1cbfce766d0b) call cfg80211_disconnected, reason:0
+ RTW: -871x_drv - drv_close, bup=1
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=0, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=1, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=2, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=3, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=4, addr=(null)
+ RTW: cfg80211_rtw_del_key(wlx1cbfce766d0b) key_index=5, addr=(null)
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:6
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:18
+ RTW: rtw_ndev_uninit(wlx1cbfce766d0b) if1
+ RTW: rtw_wdev_unregister(wdev=000000004fe87283)
+ RTW: rtw_wiphy_unregister(phy0)
+ RTW: Vendor: Unregister RTW cfg80211 vendor interface
+ RTW: rtw_pm_set_ips IPS_NONE
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_usb_primary_adapter_deinit(wlx1cbfce766d0b)
+ RTW: ==> rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: usb_read_port_cancel
+ RTW: usb_write_port_cancel
+ RTW: rtw_stop_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_hal_check_ips_status: hal_func.check_ips_status is NULL!
+ RTW: rtw_dev_unload: driver not in IPS
+ RTW: <== rtw_dev_unload(wlx1cbfce766d0b)
+ RTW: +r871xu_dev_remove, hw_init_completed=1
+ RTW: WARN free_recv_skb_queue not empty, 1
+ RTW: rtw_wdev_free(wdev=000000004fe87283)
+ RTW: rtw_wiphy_free(phy0)
+ RTW: rtw_inetaddr_notifier_unregister
+ RTW: module exit success
+ RTW: module init start
+ RTW: rtl8814au v5.8.5.1_35583.20191029
+ RTW: rtw_inetaddr_notifier_register
+ RTW: usb_endpoint_descriptor(0):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=81
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_in = 1
+ RTW: usb_endpoint_descriptor(1):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=2
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 2
+ RTW: usb_endpoint_descriptor(2):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=3
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 3
+ RTW: usb_endpoint_descriptor(3):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=4
+ RTW: wMaxPacketSize=512
+ RTW: bInterval=0
+ RTW: RT_usb_endpoint_is_bulk_out = 4
+ RTW: usb_endpoint_descriptor(4):
+ RTW: bLength=7
+ RTW: bDescriptorType=5
+ RTW: bEndpointAddress=85
+ RTW: wMaxPacketSize=64
+ RTW: bInterval=1
+ RTW: RT_usb_endpoint_is_int_in = 5, Interval = 1
+ RTW: nr_endpoint=5, in_num=2, out_num=3
+ RTW: USB_SPEED_HIGH
+ RTW: CHIP TYPE: RTL8814
+ RTW: read_chip_version_8814a SYS_CFG(0xF0)=0x04441137
+ RTW: Chip Version Info: CHIP_8814A_S2_3T3R_RomVer(0)
+ RTW: _ConfigChipOutEP_8814 OutEpQueueSel(0x07), OutEpNumber(3)
+ RTW: ====> Hal_InitEfuseVars_8814A
+ RTW: ====>pEfuseHal->WordUnit 4
+ RTW: ====>pEfuseHal->OOBProtectBytes 15
+ RTW: ====>pEfuseHal->ProtectBytes 16
+ RTW: ====>pEfuseHal->MaxSecNum_WiFi 64
+ RTW: ====>pEfuseHal->PhysicalLen_WiFi 1024
+ RTW: ====>pEfuseHal->LogicalLen_WiFi 512
+ RTW: Hal_InitEfuseVars_8814A <====
+ RTW: Boot from EFUSE, Autoload OK !
+ RTW: reg 0x33, usb write 1 fail, status:-71 value=0x0, vendorreq_times:1
+ RTW: reg 0x33, usb write 1 fail, status:-71 value=0x0, vendorreq_times:2
+ RTW: reg 0x33, usb write 1 fail, status:-71 value=0x0, vendorreq_times:3
+ RTW: data[0] = 29
+ RTW: data[1] = 81
+ RTW: data[2] = d
+ RTW: data[3] = f4
+ RTW: data[4] = d
+ RTW: data[5] = c
+ RTW: data[6] = 18
+ RTW: data[7] = 0
+ RTW: data[8] = 80
+ RTW: data[9] = 0
+ RTW: data[a] = 0
+ RTW: data[b] = 8
+ RTW: data[c] = 8
+ RTW: data[d] = 19
+ RTW: data[e] = 12
+ RTW: data[f] = 10
+ RTW: data[10] = 2e
+ RTW: data[11] = 2d
+ RTW: data[12] = 2d
+ RTW: data[13] = 2d
+ RTW: data[14] = 2d
+ RTW: data[15] = 2d
+ RTW: data[16] = 2d
+ RTW: data[17] = 2d
+ RTW: data[18] = 2c
+ RTW: data[19] = 2c
+ RTW: data[1a] = 2c
+ RTW: data[1b] = fe
+ RTW: data[1c] = ee
+ RTW: data[1d] = ee
+ RTW: data[1e] = ee
+ RTW: data[1f] = ee
+ RTW: data[20] = ee
+ RTW: data[21] = ee
+ RTW: data[22] = 26
+ RTW: data[23] = 26
+ RTW: data[24] = 26
+ RTW: data[25] = 26
+ RTW: data[26] = 2a
+ RTW: data[27] = 28
+ RTW: data[28] = 28
+ RTW: data[29] = 28
+ RTW: data[2a] = 28
+ RTW: data[2b] = 28
+ RTW: data[2c] = 25
+ RTW: data[2d] = 26
+ RTW: data[2e] = 26
+ RTW: data[2f] = 27
+ RTW: data[30] = d0
+ RTW: data[31] = ee
+ RTW: data[32] = ee
+ RTW: data[33] = ee
+ RTW: data[34] = ee
+ RTW: data[35] = ee
+ RTW: data[36] = f0
+ RTW: data[37] = ee
+ RTW: data[38] = ee
+ RTW: data[39] = ee
+ RTW: data[3a] = 2b
+ RTW: data[3b] = 2b
+ RTW: data[3c] = 2b
+ RTW: data[3d] = 2b
+ RTW: data[3e] = 2b
+ RTW: data[3f] = 2b
+ RTW: data[40] = 2c
+ RTW: data[41] = 2c
+ RTW: data[42] = 2b
+ RTW: data[43] = 2b
+ RTW: data[44] = 2b
+ RTW: data[45] = ff
+ RTW: data[46] = ee
+ RTW: data[47] = ee
+ RTW: data[48] = ee
+ RTW: data[49] = ee
+ RTW: data[4a] = ee
+ RTW: data[4b] = ee
+ RTW: data[4c] = 1e
+ RTW: data[4d] = 1e
+ RTW: data[4e] = 1e
+ RTW: data[4f] = 1e
+ RTW: data[50] = 1e
+ RTW: data[51] = 1e
+ RTW: data[52] = 1e
+ RTW: data[53] = 1e
+ RTW: data[54] = 1e
+ RTW: data[55] = 1e
+ RTW: data[56] = 1e
+ RTW: data[57] = 1e
+ RTW: data[58] = 1e
+ RTW: data[59] = 1e
+ RTW: data[5a] = f0
+ RTW: data[5b] = ee
+ RTW: data[5c] = ee
+ RTW: data[5d] = ee
+ RTW: data[5e] = ee
+ RTW: data[5f] = ff
+ RTW: data[60] = f0
+ RTW: data[61] = ee
+ RTW: data[62] = ee
+ RTW: data[63] = ee
+ RTW: data[64] = 31
+ RTW: data[65] = 30
+ RTW: data[66] = 30
+ RTW: data[67] = 31
+ RTW: data[68] = 31
+ RTW: data[69] = 31
+ RTW: data[6a] = 30
+ RTW: data[6b] = 30
+ RTW: data[6c] = 30
+ RTW: data[6d] = 2f
+ RTW: data[6e] = 2f
+ RTW: data[6f] = ee
+ RTW: data[70] = ee
+ RTW: data[71] = ee
+ RTW: data[72] = ee
+ RTW: data[73] = ee
+ RTW: data[74] = ee
+ RTW: data[75] = ee
+ RTW: data[76] = 23
+ RTW: data[77] = 22
+ RTW: data[78] = 23
+ RTW: data[79] = 24
+ RTW: data[7a] = 19
+ RTW: data[7b] = 18
+ RTW: data[7c] = 18
+ RTW: data[7d] = 16
+ RTW: data[7e] = 15
+ RTW: data[7f] = 15
+ RTW: data[80] = 19
+ RTW: data[81] = 1a
+ RTW: data[82] = 1c
+ RTW: data[83] = 1e
+ RTW: data[84] = f1
+ RTW: data[85] = ee
+ RTW: data[86] = ee
+ RTW: data[87] = ee
+ RTW: data[88] = ee
+ RTW: data[89] = ee
+ RTW: data[8a] = f0
+ RTW: data[8b] = ee
+ RTW: data[8c] = ee
+ RTW: data[8d] = ee
+ RTW: data[8e] = 37
+ RTW: data[8f] = 36
+ RTW: data[90] = 35
+ RTW: data[91] = 36
+ RTW: data[92] = 36
+ RTW: data[93] = 36
+ RTW: data[94] = 34
+ RTW: data[95] = 34
+ RTW: data[96] = 34
+ RTW: data[97] = 32
+ RTW: data[98] = 32
+ RTW: data[99] = dc
+ RTW: data[9a] = ee
+ RTW: data[9b] = ee
+ RTW: data[9c] = ee
+ RTW: data[9d] = ee
+ RTW: data[9e] = ee
+ RTW: data[9f] = ee
+ RTW: data[a0] = 1d
+ RTW: data[a1] = 1d
+ RTW: data[a2] = 1d
+ RTW: data[a3] = 1b
+ RTW: data[a4] = 1d
+ RTW: data[a5] = 1c
+ RTW: data[a6] = 1a
+ RTW: data[a7] = 1a
+ RTW: data[a8] = 1c
+ RTW: data[a9] = 1c
+ RTW: data[aa] = 1e
+ RTW: data[ab] = 1e
+ RTW: data[ac] = 1f
+ RTW: data[ad] = 20
+ RTW: data[ae] = f1
+ RTW: data[af] = ee
+ RTW: data[b0] = ee
+ RTW: data[b1] = ee
+ RTW: data[b2] = ee
+ RTW: data[b3] = ee
+ RTW: data[b4] = 0
+ RTW: data[b5] = ee
+ RTW: data[b6] = ee
+ RTW: data[b7] = ee
+ RTW: data[b8] = 7f
+ RTW: data[b9] = 3f
+ RTW: data[ba] = 2b
+ RTW: data[bb] = 0
+ RTW: data[bc] = f
+ RTW: data[bd] = 0
+ RTW: data[be] = 0
+ RTW: data[bf] = 88
+ RTW: data[c0] = 88
+ RTW: data[c1] = 1
+ RTW: data[c2] = 0
+ RTW: data[c3] = 0
+ RTW: data[c4] = 0
+ RTW: data[c5] = 0
+ RTW: data[c6] = 0
+ RTW: data[c7] = 55
+ RTW: data[c8] = 0
+ RTW: data[c9] = ff
+ RTW: data[ca] = 1
+ RTW: data[cb] = ff
+ RTW: data[cc] = ff
+ RTW: data[cd] = ff
+ RTW: data[ce] = ff
+ RTW: data[cf] = ff
+ RTW: data[d0] = da
+ RTW: data[d1] = b
+ RTW: data[d2] = 13
+ RTW: data[d3] = 88
+ RTW: data[d4] = e3
+ RTW: data[d5] = 66
+ RTW: data[d8] = 1c
+ RTW: data[d9] = bf
+ RTW: data[da] = ce
+ RTW: data[db] = 76
+ RTW: data[dc] = 6d
+ RTW: data[dd] = b
+ RTW: data[de] = 9
+ RTW: data[df] = 3
+ RTW: data[e0] = 52
+ RTW: data[e1] = 65
+ RTW: data[e2] = 61
+ RTW: data[e3] = 6c
+ RTW: data[e4] = 74
+ RTW: data[e5] = 65
+ RTW: data[e6] = 6b
+ RTW: data[e7] = e
+ RTW: data[e8] = 3
+ RTW: data[e9] = 38
+ RTW: data[ea] = 30
+ RTW: data[eb] = 32
+ RTW: data[ec] = 2e
+ RTW: data[ed] = 31
+ RTW: data[ee] = 31
+ RTW: data[ef] = 61
+ RTW: data[f0] = 63
+ RTW: data[f1] = 20
+ RTW: data[f2] = 4e
+ RTW: data[f3] = 49
+ RTW: data[f4] = 43
+ RTW: data[f5] = 8
+ RTW: data[f6] = 3
+ RTW: data[f7] = 31
+ RTW: data[f8] = 32
+ RTW: data[f9] = 33
+ RTW: data[fa] = 34
+ RTW: data[fb] = 35
+ RTW: data[fc] = 36
+ RTW: data[fd] = ff
+ RTW: data[fe] = ff
+ RTW: data[ff] = ff
+ RTW: data[100] = ff
+ RTW: data[101] = ff
+ RTW: data[102] = ff
+ RTW: data[103] = ff
+ RTW: data[104] = ff
+ RTW: data[105] = ff
+ RTW: data[106] = ff
+ RTW: data[107] = ff
+ RTW: data[108] = ff
+ RTW: data[109] = ff
+ RTW: data[10a] = ff
+ RTW: data[10b] = ff
+ RTW: data[10c] = ff
+ RTW: data[10d] = ff
+ RTW: data[10e] = ff
+ RTW: data[10f] = ff
+ RTW: data[110] = ff
+ RTW: data[111] = ff
+ RTW: data[112] = ff
+ RTW: data[113] = ff
+ RTW: data[114] = ff
+ RTW: data[115] = ff
+ RTW: data[120] = ff
+ RTW: data[121] = ff
+ RTW: data[122] = ff
+ RTW: data[123] = ff
+ RTW: data[124] = ff
+ RTW: data[125] = ff
+ RTW: data[126] = ff
+ RTW: data[127] = ff
+ RTW: data[12c] = ff
+ RTW: data[12d] = 4
+ RTW: HW EFUSE
+ RTW: 0x000: 29 81 0D F4  0D 0C 18 00  80 00 00 08  08 19 12 10  
+ RTW: 0x010: 2E 2D 2D 2D  2D 2D 2D 2D  2C 2C 2C FE  EE EE EE EE  
+ RTW: 0x020: EE EE 26 26  26 26 2A 28  28 28 28 28  25 26 26 27  
+ RTW: 0x030: D0 EE EE EE  EE EE F0 EE  EE EE 2B 2B  2B 2B 2B 2B  
+ RTW: 0x040: 2C 2C 2B 2B  2B FF EE EE  EE EE EE EE  1E 1E 1E 1E  
+ RTW: 0x050: 1E 1E 1E 1E  1E 1E 1E 1E  1E 1E F0 EE  EE EE EE FF  
+ RTW: 0x060: F0 EE EE EE  31 30 30 31  31 31 30 30  30 2F 2F EE  
+ RTW: 0x070: EE EE EE EE  EE EE 23 22  23 24 19 18  18 16 15 15  
+ RTW: 0x080: 19 1A 1C 1E  F1 EE EE EE  EE EE F0 EE  EE EE 37 36  
+ RTW: 0x090: 35 36 36 36  34 34 34 32  32 DC EE EE  EE EE EE EE  
+ RTW: 0x0A0: 1D 1D 1D 1B  1D 1C 1A 1A  1C 1C 1E 1E  1F 20 F1 EE  
+ RTW: 0x0B0: EE EE EE EE  00 EE EE EE  7F 3F 2B 00  0F 00 00 88  
+ RTW: 0x0C0: 88 01 00 00  00 00 00 55  00 FF 01 FF  FF FF FF FF  
+ RTW: 0x0D0: DA 0B 13 88  E3 66 FF FF  1C BF CE 76  6D 0B 09 03  
+ RTW: 0x0E0: 52 65 61 6C  74 65 6B 0E  03 38 30 32  2E 31 31 61  
+ RTW: 0x0F0: 63 20 4E 49  43 08 03 31  32 33 34 35  36 FF FF FF  
+ RTW: 0x100: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x110: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x120: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF 04 FF FF  
+ RTW: 0x130: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x140: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x150: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x160: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x170: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x180: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x190: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1A0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1B0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1C0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1D0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1E0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: 0x1F0: FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF  
+ RTW: VID = 0x0BDA, PID = 0x8813
+ RTW: Customer ID: 0x00, SubCustomer ID: 0xCD
+ RTW: EEPROMRegulatory = 0x1
+ RTW: EEPROMBluetoothCoexist = 0, EEPROMBluetoothAntNum = Ant_x2
+ RTW: hal_com_config_channel_plan chplan:0x7F
+ RTW: crystal_cap: 0x3f
+ RTW: ThermalMeter = 0x2b
+ RTW: hal_ReadRemoteWakeup_8814A...bSupportRemoteWakeup(0)
+ RTW: SWAS: bHwAntDiv = 0, TRxAntDivType = 0
+ RTW: pHalData->ExternalPA_2G = 0, pHalData->external_pa_5g = 1
+ RTW: pHalData->ExternalLNA_2G = 0, pHalData->external_lna_5g = 1
+ RTW: pHalData->TypeGPA = 0x0, pHalData->TypeAPA = 0x0
+ RTW: pHalData->TypeGLNA = 0x0, pHalData->TypeALNA = 0x0
+ RTW: RFE Type: 0x 1
+ RTW: PowerTracking Type: 0x 0
+ RTW: Usb Switch: 1
+ RTW: PID= 0x8813, VID=  bda
+ RTW: Customer ID: 0x 0
+ RTW: hal_GetRxGainOffset_8814A(): AutoloadFail = 0!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_2G = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GL = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GM = 0xffff!!
+ RTW: hal_GetRxGainOffset_8814A(): RegRxGainOffset_5GH = 0xffff!!
+ RTW: registrypriv.RegPwrTrimEnable = 2
+ RTW: kfree flag:0
+ RTW: rtw_hal_read_chip_info in 114 ms
+ RTW: init_channel_set((null)) ChannelPlan ID:0x7f, ch num:37
+ RTW: EEPROM RF set 4T4R
+ RTW: default rf type: 4
+ RTW: [8814A] Final rf_config: 4
+ RTW: rtw_hal_rfpath_init trx_path_bmp:0x3f(RF_2T4R), NumTotalRFPath:4, max_tx_cnt:2
+ RTW: [TRX_Nss] HALSPEC - tx_nss :3, rx_nss:3
+ RTW: [TRX_Nss] Registry - tx_nss :0, rx_nss:0
+ RTW: [TRX_Nss] HALDATA - tx_nss :2, rx_nss:3
+ RTW: rtw_hal_trxnss_init tx_nss:2, rx_nss:3
+ RTW: init_mlme_default_rate_set: support CCK
+ RTW: init_mlme_default_rate_set: support OFDM
+ RTW: NR_RECVBUFF: 8
+ RTW: MAX_RECVBUF_SZ: 32768
+ RTW: NR_PREALLOC_RECV_SKB: 8
+ RTW: rtw_alloc_macid((null)) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_init_pwrctrl_priv: IPS_mode=0, LPS_mode=0, LPS_level=0
+ RTW: IQK FW offload:disable
+ RTW: rtw_regsty_chk_target_tx_power_valid return _FALSE for band:0, path:0, rs:0, t:-1
+ RTW: can't get autopm:
+ RTW: rtw_macaddr_cfg mac addr:1c:bf:ce:76:6d:0b
+ RTW: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+ RTW: rtw_wiphy_alloc(phy0)
+ RTW: rtw_wdev_alloc(padapter=00000000ace4a915)
+ RTW: rtw_wiphy_register(phy0)
+ RTW: Register RTW cfg80211 vendor cmd(0x67) interface
+ RTW: rtw_reg_notifier: NL80211_REGDOM_SET_BY_CORE
+ RTW: rtw_ndev_init(wlan0) if1 mac_addr=1c:bf:ce:76:6d:0b
+ RTW: rtw_ndev_notifier_call(wlan0) state:17
+ RTW: cfg80211_rtw_get_txpower
+ RTW: rtw_ndev_notifier_call(wlan0) state:5
+ RTW: cfg80211_rtw_get_txpower
+ RTW: module init ret=0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:11
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:14
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=0
+ RTW:  power-on :REG_SYS_CLKR 0x09=0xfc. REG_CR 0x100=0xff.
+ RTW:  MAC has already power on.
+ RTW: ===>_InitQueueReservedPage_8814AUsb()
+ RTW: <===_InitQueueReservedPage_8814AUsb()
+ RTW: FirmwareDownload8814A fw source from Header
+ RTW: FirmwareDownload8814A fw:NIC, size: 68320
+ RTW: FirmwareDownload8814A: fw_ver=33 fw_subver=6 sig=0x8814
+ RTW: HalROMDownloadFWRSVDPage8814A(): There is an Adapter is sending beacon.
+ RTW: dmem_pkt_size = 5792, iram_pkt_size = 62464,FWHeaderSize = 64, Len = 68320!!
+ RTW: MaxRsvdPageBufSize 1488,  Total len 68320
+ RTW: Check sum OK
+ RTW: dmem check sum tmp 33
+ RTW: Check sum OK
+ RTW: imem check sum tmp 105
+ RTW: FWDL success. write_fw:0, 74ms
+ RTW: rtl8814au_hal_init: Download Firmware Success!!
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: txpath=0x3, rxpath=0xf
+ RTW: txpath_1ss:0x1, num:1
+ RTW: txpath_2ss:0x3, num:2
+ RTW: rtl8814au_hal_init in 395ms
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: rtw_hal_get_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: [HW_VAR_ENABLE_RX_BAR] 0x6A2=0x520
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: Registry kfree default force disable.
+ RTW: MAC Address = 1c:bf:ce:76:6d:0b
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) enter
+ RTW: rtw_start_drv_threads(wlx1cbfce766d0b) start RTW_CMD_THREAD
+ RTW: rtw_cfg80211_init_wiphy:rf_type=4
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [warning] rf_type 4 is not expected
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line806, Available RX buf size = 32712 bytes
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_set_power_mgmt(wlx1cbfce766d0b) enabled:0, timeout:-1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:1
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: cfg80211_rtw_get_txpower
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_ps_deny_cancel(wlx1cbfce766d0b): [ERROR] Reason 7 had been canceled before!!
+ RTW: set_mode = IW_MODE_INFRA
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 2
+ RTW: set bssid:00:00:00:00:00:00
+ RTW: =>rtw_wx_set_essid
+ RTW: <=rtw_wx_set_essid, ret 0
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0x2
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0x2
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) type=3, hw_port:0
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) call netdev_open
+ RTW: _netdev_open(wlx1cbfce766d0b) , bup=1
+ RTW: -871x_drv - drv_open, bup=1
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) old_iftype=2, new_iftype=3
+ RTW: rtw_release_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:ff:ff:ff:ff:ff:ff macid:1
+ RTW: rtw_hal_set_macaddr_port wlx1cbfce766d0b- hw port(0) mac_addr =1c:bf:ce:76:6d:0b
+ RTW: hw_var_set_opmode()-3339 mode = 3
+ RTW: cfg80211_rtw_change_iface(wlx1cbfce766d0b) ret:0
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_get_txpower
+ RTW: cfg80211_rtw_scan(wlx1cbfce766d0b)
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(42) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: cfg80211_rtw_set_wiphy_params
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=(null)
+ RTW: flush all sta, and cam_entry
+ RTW: rtw_sta_flush(wlx1cbfce766d0b)
+ RTW: issue_deauth to ff:ff:ff:ff:ff:ff
+ RTW: cfg80211_rtw_start_ap(wlx1cbfce766d0b) hidden_ssid:0, auth_type:8
+ RTW: rtw_cfg80211_set_auth_type, nl80211_auth_type=8
+ RTW: rtw_add_beacon beacon_head_len=66, beacon_tail_len=114
+ RTW: rtw_check_beacon_data, len=156
+ RTW: [HT] HAL Support LDPC = 0x03
+ RTW: [HT] HAL Support STBC = 0x01
+ RTW: [VHT] Support LDPC = 0x03
+ RTW: [VHT] Support STBC = 0x03
+ RTW: [VHT] Support Beamformer
+ RTW: [VHT] Support Beamformee
+ RTW: rtw_build_vht_cap_ie, line806, Available RX buf size = 32712 bytes
+ RTW: rtw_build_vht_cap_ie, line810, Set MAX MPDU len = 11454 bytes
+ RTW: [VHT] Declare supporting RX LDPC
+ RTW: [VHT] Declare supporting SGI 80MHz
+ RTW: [VHT] Declare supporting TX STBC
+ RTW: [VHT] Declare supporting RX STBC = 1
+ RTW: [VHT] Declare supporting SU Bfer
+ RTW: [VHT] Declare supporting SU Bfee
+ RTW: update_hw_ht_param
+ RTW: rtw_hal_set_bssid wlx1cbfce766d0b- hw port -0 BSSID: 1c:bf:ce:76:6d:0b
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 excl_ifbmp:0x00 req:0,-1,-1
+ RTW: rtw_ap_chbw_decision others ld_sta_num:0, lg_sta_num:0, ap_num:0, mesh_num:0
+ RTW: rtw_ap_chbw_decision ifbmp:0x01 tmp union:40,2,2
+ RTW: rtw_ap_chbw_decision(wlx1cbfce766d0b) 40,2,2 => 40,2,2
+ RTW: rtw_ap_chbw_decision union:40,2,2
+ RTW: HW_VAR_BASIC_RATE: 0x15f->0x15f->0x15f
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:1, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:1, SM_PS 3
+ RTW: MediaStatusRpt parm:01 01 00 
+ RTW: wlx1cbfce766d0b BMC Init Tx rate - OFDM_24M
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: rtw_cfg80211_indicate_connect(wlx1cbfce766d0b)
+ RTW: assoc success
+ RTW: cfg80211_rtw_change_bss(wlx1cbfce766d0b)
+ RTW: +cfg80211_rtw_del_station(wlx1cbfce766d0b) mac=ff:ff:ff:ff:ff:ff
+ RTW: free sta macaddr =ff:ff:ff:ff:ff:ff
+ RTW: rtw_ndev_notifier_call(wlx1cbfce766d0b) state:4
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VO = 0x002f3219
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_VI = 0x005e4319
+ RTW: cfg80211_rtw_set_mac_acl(wlx1cbfce766d0b) acl_policy:0, entry_num:0
+ RTW: rtw_set_macaddr_acl(wlx1cbfce766d0b) p=1, mode=1
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BE = 0x0000642b
+ RTW: rtw_ac_parm_cmd_hdl(wlx1cbfce766d0b) AC_BK = 0x0000a44f
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: SetHwReg8814A:(HW_VAR_CHECK_TXBUF)TXBUF Empty(1) in 1 ms
+ RTW: wlx1cbfce766d0b sleep m0=0x00000002, ori reg_0x4d4=0x00000000
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: <==PHY_SwitchWirelessBand8814():Switch Band OK.
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: wlx1cbfce766d0b wakeup m0=0x00000002, ori reg_0x4d4=0x00000002
+ RTW: survey done event(46) band:0 for wlx1cbfce766d0b
+ RTW: rtw_indicate_scan_done(wlx1cbfce766d0b)
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check i=0 tx_rate =0xc
+ RTW: _rtw_phydm_pwr_tracking_rate_check tx_low_rate (unlinked to any AP)=0xc
+ RTW: +OnAuth
+ RTW: auth alg=0, seq=1
+ RTW: going to alloc stainfo for sa=1c:bf:ce:db:f4:62
+ RTW: rtw_alloc_macid(wlx1cbfce766d0b) if1, mac_addr:1c:bf:ce:db:f4:62 macid:0
+ RTW: issue_auth
+ RTW: OnAssocReq
+ RTW: IEEE 802.11 element parse ignored unknown element (id=127 elen=8)
+ RTW: STA did not include WPA/RSN IE in (Re)Association Request - possible WPS use
+ RTW: OnAssocReq(wlx1cbfce766d0b) allocate new AID=1
+ RTW: HT: STA 1c:bf:ce:db:f4:62 HT Capabilities Info: 0x186f
+ RTW: bss_cap_update_on_sta_join STA 1c:bf:ce:db:f4:62 - no greenfield, num of non-gf stations 1
+ RTW: rtw_ht_operation_update current operation mode=0x0
+ RTW: rtw_ht_operation_update new operation mode=0x4 changes=1
+ RTW: update_bcn_htcap_ie
+ RTW: update_bcn_htinfo_ie current operation mode=0x4
+ RTW: num_sta_40mhz_intolerant(0), 20mhz_width_req(0), intolerant_ch_rpt(0), olbc(0)
+ RTW: update_bcn_htinfo_ie:switching back to 40Mhz
+ RTW: associated_stainfo_update: 1c:bf:ce:db:f4:62, updated_type=0x3f
+ RTW: bss_cap_update_on_sta_join, updated=1
+ RTW: update_sta_info_apmode
+ RTW: Enable HT Tx LDPC for STA(1)
+ RTW: Current STA(1) VHT LDPC = 0A
+ RTW: Current STA(1) VHT STBC = 0A
+ RTW: Current STA(1) VHT Beamforming Setting = 1203
+ RTW: ### Set STA_(0) info ###
+ RTW: issue_asocrsp
+ RTW: report_add_sta_event: add STA
+ RTW: MediaStatusRpt parm:11 00 00 
+ RTW: rtw_get_sta_tx_nss: 2 SS
+ RTW: rtw_get_sta_rx_nss: 3 ss
+ RTW: STA - MAC_ID:0, Tx - 2 SS, Rx - 3 SS
+ RTW: STA - MAC_ID:0, SM_PS 3
+ RTW: vht_mcs_map=ea ff, nss=2 => bitmap=00000000000fffff
+ RTW: rtw_ap_update_sta_ra_info=> mac_id:0 , tx_ra_bitmap:0x00000000fffffff0, networkType:0x44
+ RTW: ============ STA [1c:bf:ce:db:f4:62]  ===================
+ RTW: mac_id : 0
+ RTW: wireless_mode : 0x44
+ RTW: mimo_type : 3
+ RTW: static smps : N
+ RTW: bw_mode : 80MHz, ra_bw_mode : 80MHz
+ RTW: rate_id : 9
+ RTW: rssi : -1 (%), rssi_level : 0
+ RTW: is_support_sgi : Y, is_vht_enable : Y
+ RTW: disable_ra : N, disable_pt : N
+ RTW: is_noisy : N
+ RTW: txrx_state : 0
+ RTW: curr_tx_rate : CCK_1M (L)
+ RTW: curr_tx_bw : 20MHz
+ RTW: curr_retry_ratio : 0
+ RTW: ra_mask : 0x00000000fffffff0
+ RTW: indicate_sta_assoc_event to upper layer - hostapd
+ RTW: rtw_cfg80211_indicate_sta_assoc(wlx1cbfce766d0b)
+ RTW: cfg80211_rtw_change_station(wlx1cbfce766d0b) mac:1c:bf:ce:db:f4:62
+ RTW: rtw_set_rts_bw connect_to_8812=0,enable=1
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: ###=> usb_read_port_complete => urb.status(-71)
+ RTW: [dvobj:00000000bb05f4d9][ERROR] continual_io_error:5 > 4
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b)- bDriverStopped(False) bSurpriseRemoved(True)
+ RTW: rtw_cmd_thread(wlx1cbfce766d0b) Exit
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: usb_read_port_complete() RX Warning! bDriverStopped(False) OR bSurpriseRemoved(True)
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!
+ RTW: rtw_wx_set_scan(wlx1cbfce766d0b)
+ RTW: LeaveAllPowerSaveMode(wlx1cbfce766d0b): bSurpriseRemoved=_TRUE Skip!

@@ -1,6 +1,7 @@
 EXTRA_CFLAGS += $(USER_EXTRA_CFLAGS)
 EXTRA_CFLAGS += -O1
 #EXTRA_CFLAGS += -O3
+EXTRA_CFLAGS += -w
 #EXTRA_CFLAGS += -Wall
 #EXTRA_CFLAGS += -Wextra
 #EXTRA_CFLAGS += -Werror
@@ -24,7 +25,7 @@ EXTRA_CFLAGS += -Wno-discarded-qualifiers
 #EXTRA_CFLAGS += -DCONFIG_CONCURRENT_MODE
 
 # Monitor Beamforming
-EXTRA_CFLAGS += -DCONFIG_MONITOR_BEAMFORMING
+#EXTRA_CFLAGS += -DCONFIG_BEAMFORMING_MONITOR
 
 # LED Control
 EXTRA_CFLAGS += -DCONFIG_LED_CONTROL
@@ -123,7 +124,7 @@ CONFIG_RTW_LOG_LEVEL = 1
 
 # enable /proc/net/rtlxxxx/ debug interfaces
 CONFIG_PROC_DEBUG = y
-CONFIG_DISABLE_PHYDM_DEBUG_FUNCTION = y
+CONFIG_DISABLE_PHYDM_DEBUG_FUNCTION = n
 
 ######################## Wake On Lan ##########################
 CONFIG_WOWLAN = n
@@ -279,7 +280,8 @@ _HAL_INTFS_FILES :=	hal/hal_intf.o \
 			hal/hal_mcc.o \
 			hal/hal_hci/hal_$(HCI_NAME).o \
 			hal/led/hal_led.o \
-			hal/led/hal_$(HCI_NAME)_led.o
+			hal/led/hal_$(HCI_NAME)_led.o \
+			hal/rtl8814a/rtl8814a_bf_monitor.o
 
 
 EXTRA_CFLAGS += -I$(src)/platform
