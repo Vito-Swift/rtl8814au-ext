@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    ".env*": "dotenv",
-    ".tex*": "latex",
-    ".m": "matlab",
-    "wlan_bssdef.h": "c"
-  }
-}
