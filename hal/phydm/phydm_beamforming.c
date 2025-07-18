@@ -603,6 +603,11 @@ void beamforming_dym_period(
 
 	/* @3 TODO  per-client throughput caculation. */
 
+#ifdef CONFIG_NDP_FIXED_PERIOD
+	PADAPTER adapter = (PADAPTER)dm->adapter;
+	sound_period_sw = adapter->registrypriv.ndp_period;
+	sound_period_fw = adapter->registrypriv.ndp_period * 10;
+#else
 	if ((*dm->current_tx_tp + *dm->current_rx_tp > 2) && (entry->log_status_fail_cnt <= 20 || status))
 	{
 		sound_period_sw = 40; /* @40ms */
@@ -610,9 +615,11 @@ void beamforming_dym_period(
 	}
 	else
 	{
-		sound_period_sw = 80;  // 4000; /* @4s */
-		sound_period_fw = 800; // 400;
+		sound_period_sw = 4000; /* @4s */
+		sound_period_fw = 400;
 	}
+#endif
+
 	PHYDM_DBG(dm, DBG_TXBF, "[%s]sound_period_sw=%d, sound_period_fw=%d\n",
 			  __func__, sound_period_sw, sound_period_fw);
 
